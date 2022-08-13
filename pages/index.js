@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="">
       <Head>
-        <title>Create Next App</title>
+        <title>Codesprint</title>
         <meta name="description" content="Codesprint - Print And Wear the code" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
