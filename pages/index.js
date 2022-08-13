@@ -11,7 +11,6 @@ export default function Home() {
         <meta name="description" content="Codesprint - Print And Wear the code" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
       <main >
         <img src="/banner.png" alt="banner" className="w-full" />
       </main>
