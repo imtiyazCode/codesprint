@@ -4,7 +4,7 @@ import {BiCartAlt} from 'react-icons/bi'
 
 const Navbar = () => {
     return (
-        <div className="flex flex-col sm:flex-row justify-between py-2 px-3 items-center">
+        <div className="flex flex-col sm:flex-row justify-between py-2 px-3 items-center shadow-md">
             <div className="logo cursor-pointer">
                 <Link href="/">
                     <Image src={"/codesprintlogo.png"} width={200} height={45} />
