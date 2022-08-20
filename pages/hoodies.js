@@ -13,7 +13,7 @@ const Hoodies = () => {
                   <img alt="ecommerce" className="h-[250px] block m-auto" src="https://m.media-amazon.com/images/I/51ZIqCyzpbL._UL1000_.jpg" />
                 </a>
                 <div className="mt-4 text-center md:text-left">
-                  <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
+                  <h3 className="text-purple-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
                   <h2 className="text-gray-900 title-font text-lg font-medium">The Catalyzer</h2>
                   <p className="mt-1">₹ 960 <span className='line-through'>{860 * 1.3}</span></p>
                 </div>
@@ -24,7 +24,7 @@ const Hoodies = () => {
                   <img alt="ecommerce" className="h-[250px] block m-auto" src="https://m.media-amazon.com/images/I/51ZIqCyzpbL._UL1000_.jpg" />
                 </a>
                 <div className="mt-4 text-center md:text-left">
-                  <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
+                  <h3 className="text-purple-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
                   <h2 className="text-gray-900 title-font text-lg font-medium">Shooting Stars</h2>
                   <p className="mt-1">₹ 910 <span className='line-through'>{810 * 1.3}</span></p>
                 </div>
@@ -35,7 +35,7 @@ const Hoodies = () => {
                   <img alt="ecommerce" className="h-[250px] block m-auto" src="https://m.media-amazon.com/images/I/51ZIqCyzpbL._UL1000_.jpg" />
                 </a>
                 <div className="mt-4 text-center md:text-left">
-                  <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
+                  <h3 className="text-purple-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
                   <h2 className="text-gray-900 title-font text-lg font-medium">Neptune</h2>
                   <p className="mt-1">₹ 920 <span className='line-through'>{820 * 1.3}</span></p>
                 </div>
@@ -46,7 +46,7 @@ const Hoodies = () => {
                   <img alt="ecommerce" className="h-[250px] block m-auto" src="https://m.media-amazon.com/images/I/51ZIqCyzpbL._UL1000_.jpg" />
                 </a>
                 <div className="mt-4 text-center md:text-left">
-                  <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
+                  <h3 className="text-purple-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
                   <h2 className="text-gray-900 title-font text-lg font-medium">The 400 Blows</h2>
                   <p className="mt-1">₹ 980 <span className='line-through'>{880 * 1.3}</span></p>
                 </div>
@@ -57,7 +57,7 @@ const Hoodies = () => {
                   <img alt="ecommerce" className="h-[250px] block m-auto" src="https://m.media-amazon.com/images/I/51ZIqCyzpbL._UL1000_.jpg" />
                 </a>
                 <div className="mt-4 text-center md:text-left">
-                  <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
+                  <h3 className="text-purple-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
                   <h2 className="text-gray-900 title-font text-lg font-medium">The Catalyzer</h2>
                   <p className="mt-1">₹ 960 <span className='line-through'>{860 * 1.3}</span></p>
                 </div>
@@ -68,7 +68,7 @@ const Hoodies = () => {
                   <img alt="ecommerce" className="h-[250px] block mx-auto" src="https://m.media-amazon.com/images/I/51ZIqCyzpbL._UL1000_.jpg" />
                 </a>
                 <div className="mt-4 text-center md:text-left">
-                  <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
+                  <h3 className="text-purple-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
                   <h2 className="text-gray-900 title-font text-lg font-medium">Shooting Stars</h2>
                   <p className="mt-1">₹ 910 <span className='line-through'>{810 * 1.3}</span></p>
                 </div>
@@ -79,7 +79,7 @@ const Hoodies = () => {
                   <img alt="ecommerce" className="h-[250px] block mx-auto" src="https://m.media-amazon.com/images/I/51ZIqCyzpbL._UL1000_.jpg" />
                 </a>
                 <div className="mt-4 text-center md:text-left">
-                  <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
+                  <h3 className="text-purple-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
                   <h2 className="text-gray-900 title-font text-lg font-medium">Neptune</h2>
                   <p className="mt-1">₹ 920 <span className='line-through'>{820 * 1.3}</span></p>
                 </div>
@@ -90,7 +90,7 @@ const Hoodies = () => {
                   <img alt="ecommerce" className="h-[250px] block m-auto" src="https://m.media-amazon.com/images/I/51ZIqCyzpbL._UL1000_.jpg" />
                 </a>
                 <div className="mt-4 text-center md:text-left">
-                  <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
+                  <h3 className="text-purple-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
                   <h2 className="text-gray-900 title-font text-lg font-medium">The 400 Blows</h2>
                   <p className="mt-1">₹ 980 <span className='line-through'>{880 * 1.3}</span></p>
                 </div>
@@ -101,7 +101,7 @@ const Hoodies = () => {
                   <img alt="ecommerce" className="h-[250px] block m-auto" src="https://m.media-amazon.com/images/I/51ZIqCyzpbL._UL1000_.jpg" />
                 </a>
                 <div className="mt-4 text-center md:text-left">
-                  <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
+                  <h3 className="text-purple-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
                   <h2 className="text-gray-900 title-font text-lg font-medium">The Catalyzer</h2>
                   <p className="mt-1">₹ 960 <span className='line-through'>{860 * 1.3}</span></p>
                 </div>
@@ -112,7 +112,7 @@ const Hoodies = () => {
                   <img alt="ecommerce" className="h-[250px] block m-auto" src="https://m.media-amazon.com/images/I/51ZIqCyzpbL._UL1000_.jpg" />
                 </a>
                 <div className="mt-4 text-center md:text-left">
-                  <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
+                  <h3 className="text-purple-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
                   <h2 className="text-gray-900 title-font text-lg font-medium">Shooting Stars</h2>
                   <p className="mt-1">₹ 910 <span className='line-through'>{810 * 1.3}</span></p>
                 </div>
@@ -123,7 +123,7 @@ const Hoodies = () => {
                   <img alt="ecommerce" className="h-[250px] block m-auto" src="https://m.media-amazon.com/images/I/51ZIqCyzpbL._UL1000_.jpg" />
                 </a>
                 <div className="mt-4 text-center md:text-left">
-                  <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
+                  <h3 className="text-purple-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
                   <h2 className="text-gray-900 title-font text-lg font-medium">Neptune</h2>
                   <p className="mt-1">₹ 920 <span className='line-through'>{820 * 1.3}</span></p>
                 </div>
@@ -134,7 +134,7 @@ const Hoodies = () => {
                   <img alt="ecommerce" className="h-[250px] block m-auto" src="https://m.media-amazon.com/images/I/51ZIqCyzpbL._UL1000_.jpg" />
                 </a>
                 <div className="mt-4 text-center md:text-left">
-                  <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
+                  <h3 className="text-purple-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
                   <h2 className="text-gray-900 title-font text-lg font-medium">The 400 Blows</h2>
                   <p className="mt-1">₹ 980 <span className='line-through'>{880 * 1.3}</span></p>
                 </div>
@@ -145,7 +145,7 @@ const Hoodies = () => {
                   <img alt="ecommerce" className="h-[250px] block m-auto" src="https://m.media-amazon.com/images/I/51ZIqCyzpbL._UL1000_.jpg" />
                 </a>
                 <div className="mt-4 text-center md:text-left">
-                  <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
+                  <h3 className="text-purple-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
                   <h2 className="text-gray-900 title-font text-lg font-medium">The Catalyzer</h2>
                   <p className="mt-1">₹ 960 <span className='line-through'>{860 * 1.3}</span></p>
                 </div>
@@ -156,7 +156,7 @@ const Hoodies = () => {
                   <img alt="ecommerce" className="h-[250px] block mx-auto" src="https://m.media-amazon.com/images/I/51ZIqCyzpbL._UL1000_.jpg" />
                 </a>
                 <div className="mt-4 text-center md:text-left">
-                  <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
+                  <h3 className="text-purple-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
                   <h2 className="text-gray-900 title-font text-lg font-medium">Shooting Stars</h2>
                   <p className="mt-1">₹ 910 <span className='line-through'>{810 * 1.3}</span></p>
                 </div>
@@ -167,7 +167,7 @@ const Hoodies = () => {
                   <img alt="ecommerce" className="h-[250px] block mx-auto" src="https://m.media-amazon.com/images/I/51ZIqCyzpbL._UL1000_.jpg" />
                 </a>
                 <div className="mt-4 text-center md:text-left">
-                  <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
+                  <h3 className="text-purple-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
                   <h2 className="text-gray-900 title-font text-lg font-medium">Neptune</h2>
                   <p className="mt-1">₹ 920 <span className='line-through'>{820 * 1.3}</span></p>
                 </div>
@@ -178,7 +178,7 @@ const Hoodies = () => {
                   <img alt="ecommerce" className="h-[250px] block m-auto" src="https://m.media-amazon.com/images/I/51ZIqCyzpbL._UL1000_.jpg" />
                 </a>
                 <div className="mt-4 text-center md:text-left">
-                  <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
+                  <h3 className="text-purple-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
                   <h2 className="text-gray-900 title-font text-lg font-medium">The 400 Blows</h2>
                   <p className="mt-1">₹ 980 <span className='line-through'>{880 * 1.3}</span></p>
                 </div>
@@ -189,7 +189,7 @@ const Hoodies = () => {
                   <img alt="ecommerce" className="h-[250px] block m-auto" src="https://m.media-amazon.com/images/I/51ZIqCyzpbL._UL1000_.jpg" />
                 </a>
                 <div className="mt-4 text-center md:text-left">
-                  <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
+                  <h3 className="text-purple-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
                   <h2 className="text-gray-900 title-font text-lg font-medium">The Catalyzer</h2>
                   <p className="mt-1">₹ 960 <span className='line-through'>{860 * 1.3}</span></p>
                 </div>
@@ -200,7 +200,7 @@ const Hoodies = () => {
                   <img alt="ecommerce" className="h-[250px] block m-auto" src="https://m.media-amazon.com/images/I/51ZIqCyzpbL._UL1000_.jpg" />
                 </a>
                 <div className="mt-4 text-center md:text-left">
-                  <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
+                  <h3 className="text-purple-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
                   <h2 className="text-gray-900 title-font text-lg font-medium">Shooting Stars</h2>
                   <p className="mt-1">₹ 910 <span className='line-through'>{810 * 1.3}</span></p>
                 </div>
@@ -211,7 +211,7 @@ const Hoodies = () => {
                   <img alt="ecommerce" className="h-[250px] block m-auto" src="https://m.media-amazon.com/images/I/51ZIqCyzpbL._UL1000_.jpg" />
                 </a>
                 <div className="mt-4 text-center md:text-left">
-                  <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
+                  <h3 className="text-purple-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
                   <h2 className="text-gray-900 title-font text-lg font-medium">Neptune</h2>
                   <p className="mt-1">₹ 920 <span className='line-through'>{820 * 1.3}</span></p>
                 </div>
@@ -222,7 +222,7 @@ const Hoodies = () => {
                   <img alt="ecommerce" className="h-[250px] block m-auto" src="https://m.media-amazon.com/images/I/51ZIqCyzpbL._UL1000_.jpg" />
                 </a>
                 <div className="mt-4 text-center md:text-left">
-                  <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
+                  <h3 className="text-purple-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
                   <h2 className="text-gray-900 title-font text-lg font-medium">The 400 Blows</h2>
                   <p className="mt-1">₹ 980 <span className='line-through'>{880 * 1.3}</span></p>
                 </div>
@@ -233,7 +233,7 @@ const Hoodies = () => {
                   <img alt="ecommerce" className="h-[250px] block m-auto" src="https://m.media-amazon.com/images/I/51ZIqCyzpbL._UL1000_.jpg" />
                 </a>
                 <div className="mt-4 text-center md:text-left">
-                  <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
+                  <h3 className="text-purple-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
                   <h2 className="text-gray-900 title-font text-lg font-medium">The Catalyzer</h2>
                   <p className="mt-1">₹ 960 <span className='line-through'>{860 * 1.3}</span></p>
                 </div>
@@ -244,7 +244,7 @@ const Hoodies = () => {
                   <img alt="ecommerce" className="h-[250px] block mx-auto" src="https://m.media-amazon.com/images/I/51ZIqCyzpbL._UL1000_.jpg" />
                 </a>
                 <div className="mt-4 text-center md:text-left">
-                  <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
+                  <h3 className="text-purple-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
                   <h2 className="text-gray-900 title-font text-lg font-medium">Shooting Stars</h2>
                   <p className="mt-1">₹ 910 <span className='line-through'>{810 * 1.3}</span></p>
                 </div>
@@ -255,7 +255,7 @@ const Hoodies = () => {
                   <img alt="ecommerce" className="h-[250px] block mx-auto" src="https://m.media-amazon.com/images/I/51ZIqCyzpbL._UL1000_.jpg" />
                 </a>
                 <div className="mt-4 text-center md:text-left">
-                  <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
+                  <h3 className="text-purple-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
                   <h2 className="text-gray-900 title-font text-lg font-medium">Neptune</h2>
                   <p className="mt-1">₹ 920 <span className='line-through'>{820 * 1.3}</span></p>
                 </div>
@@ -266,7 +266,7 @@ const Hoodies = () => {
                   <img alt="ecommerce" className="h-[250px] block m-auto" src="https://m.media-amazon.com/images/I/51ZIqCyzpbL._UL1000_.jpg" />
                 </a>
                 <div className="mt-4 text-center md:text-left">
-                  <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
+                  <h3 className="text-purple-500 text-xs tracking-widest title-font mb-1">Hoodies</h3>
                   <h2 className="text-gray-900 title-font text-lg font-medium">The 400 Blows</h2>
                   <p className="mt-1">₹ 980 <span className='line-through'>{880 * 1.3}</span></p>
                 </div>
