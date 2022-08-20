@@ -7,7 +7,7 @@ const Cart = ({ handleSideToggle }) => {
     <div className='bg-purple-200 max-w-[24rem] h-full p-10 rounded-b-lg'>
       <div className="cartHead my-2">
         <h2 className='font-bold text-xl'>Shopping Cart</h2>
-        <span className='absolute top-5 right-5 text-2xl cursor-pointer text-[#33384d]' onClick={handleSideToggle} ><AiFillCloseCircle /></span>
+        <span className='absolute top-5 right-5 text-2xl cursor-pointer text-purple-700' onClick={handleSideToggle} ><AiFillCloseCircle /></span>
       </div>
       <div className="cartBody my-5">
         <ol className='list-decimal font-semibold'>
@@ -62,7 +62,7 @@ const Cart = ({ handleSideToggle }) => {
             </div>
           </li>
         </ol>
-        <button className="mt-4 text-white bg-[#3a4058] border-0 py-2 px-8 focus:outline-none hover:bg-[#33384d] rounded text-lg">Checkout</button>
+        <button className="mt-4 text-white bg-purple-500 border-0 py-2 px-8 focus:outline-none hover:bg-purple-700 rounded text-lg">Checkout</button>
       </div>
     </div>
   )

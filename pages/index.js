@@ -1,9 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { FaShoppingBag, FaTshirt, FaMugHot, FaShippingFast } from 'react-icons/fa'
-import { GiHoodie } from 'react-icons/gi'
-import { TbBrandJavascript } from 'react-icons/tb'
-import { IoIosCash } from 'react-icons/io'
+import { FaShoppingBag } from 'react-icons/fa'
+import Services from '../components/Services';
 
 export default function Home() {
   return (
@@ -32,6 +30,8 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        <Services />
       </main>
     </div>
   )
