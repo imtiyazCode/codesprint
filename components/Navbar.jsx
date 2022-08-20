@@ -39,7 +39,7 @@ const Navbar = () => {
             <div className="cta align-middle text-[#33384d] font-bold">
                 <button className="mx-3 px-2 py-3 text-2xl" onClick={handleSideToggle} ><BiCartAlt /></button>
             </div>
-            <div ref={ref} className="cartBar absolute top-0 right-0 h-full z-50 transform transition-transform translate-x-full">
+            <div ref={ref} className="cartBar absolute top-0 right-0 h-full transform transition-transform translate-x-full z-50">
                 <Cart handleSideToggle={handleSideToggle} />
             </div>
         </div>
