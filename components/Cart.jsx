@@ -1,6 +1,7 @@
 import React from 'react'
 import { AiFillCloseCircle, AiOutlinePlusCircle, AiOutlineMinusCircle } from 'react-icons/ai';
 import { FaShoppingBag } from 'react-icons/fa'
+import { BsFillTrashFill } from 'react-icons/bs'
 
 const Cart = ({ handleSideToggle }) => {
 
@@ -63,7 +64,16 @@ const Cart = ({ handleSideToggle }) => {
             </div>
           </li>
         </ol>
-        <button className="mt-4 text-white bg-purple-500 border-0 py-2 px-8 focus:outline-none hover:bg-purple-700 rounded text-lg flex"><FaShoppingBag className='my-auto mr-2' />Checkout</button>
+        <div className="action flex space-x-3 mt-12 w-full justify-between">
+          <button className="text-purple-700 bg-purple-100 border-0 py-2 px-5 focus:outline-none hover:bg-purple-600 hover:text-white rounded flex items-center">
+            <BsFillTrashFill className='my-auto mr-2' />
+            Clear Cart
+          </button>
+          <button className="text-white bg-purple-600 border-0 py-2 px-5 focus:outline-none hover:bg-purple-800 rounded flex items-center">
+            <FaShoppingBag className='my-auto mr-2' />
+            Checkout
+          </button>
+        </div>
       </div>
     </div>
   )
