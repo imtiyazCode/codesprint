@@ -18,8 +18,8 @@ export default function Home() {
               <h1 className='text-[55px] sm:text-[75px] md:text-[70px] lg:text-[9vw] xl:text-[117px] font-extrabold text-white leading-[129px]' >
                 Codesprint
               </h1>
-              <Link href="/hoodies">
-                <button className=' bg-white py-2 px-3 md:py-[12px] md:px-[20px] lg:py-[14px] lg:px-[24px] rounded-[42px] font-medium flex md:font-medium items-start md:text-[20px] text-purple-700 hover:bg-purple-500 hover:text-white'>
+              <Link href="#services">
+                <button className=' bg-white py-2 px-4 md:py-[12px] md:px-[20px] lg:py-[14px] lg:px-[24px] rounded-[42px] font-medium flex md:font-medium items-start md:text-[20px] text-purple-700 hover:bg-purple-500 hover:text-white'>
                   SHOP NOW
                   <FaShoppingBag className='my-auto ml-4' />
                 </button>
