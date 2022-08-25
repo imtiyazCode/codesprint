@@ -7,7 +7,7 @@ const Tshirts = () => {
       <section className="text-gray-600 body-font w-[90%] mx-auto">
         <div className="container px-5 py-12 mx-auto">
           <div className="flex flex-wrap -m-4">
-            <Link href="products/tshirt/The Catalyzer">
+            <Link href="products/The Catalyzer">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
               <a className="block relative rounded overflow-hidden">
                 <img alt="ecommerce" className="h-[250px] block m-auto" src="https://www.fajntricko.com/resize/e/1200/1200/files/2019-tricka/povolania/coding-pornstar/coding-pornstar-cerna.jpg/420x260" />
@@ -18,7 +18,7 @@ const Tshirts = () => {
                 <p className="mt-1">₹ 460 <span className='line-through'>{460*1.3}</span></p>
               </div>
             </div></Link>
-            <Link href="products/tshirt/Shooting Stars">
+            <Link href="products/Shooting Stars">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
               <a className="block relative rounded overflow-hidden">
                 <img alt="ecommerce" className="h-[250px] block m-auto" src="https://www.fajntricko.com/resize/e/1200/1200/files/2019-tricka/povolania/coding-pornstar/coding-pornstar-cerna.jpg/421x261" />
@@ -29,7 +29,7 @@ const Tshirts = () => {
                 <p className="mt-1">₹ 410 <span className='line-through'>{410*1.3}</span></p>
               </div>
             </div></Link>
-            <Link href="products/tshirt/Neptune">
+            <Link href="products/Neptune">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
               <a className="block relative rounded overflow-hidden">
                 <img alt="ecommerce" className="h-[250px] block m-auto" src="https://www.fajntricko.com/resize/e/1200/1200/files/2019-tricka/povolania/coding-pornstar/coding-pornstar-cerna.jpg/422x262" />
@@ -40,7 +40,7 @@ const Tshirts = () => {
                 <p className="mt-1">₹ 420 <span className='line-through'>{420*1.3}</span></p>
               </div>
             </div></Link>
-            <Link href="products/tshirt/400 Blows">
+            <Link href="products/400 Blows">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
               <a className="block relative rounded overflow-hidden">
                 <img alt="ecommerce" className="h-[250px] block m-auto" src="https://www.fajntricko.com/resize/e/1200/1200/files/2019-tricka/povolania/coding-pornstar/coding-pornstar-cerna.jpg/423x263" />
@@ -51,7 +51,7 @@ const Tshirts = () => {
                 <p className="mt-1">₹ 480 <span className='line-through'>{480*1.3}</span></p>
               </div>
             </div></Link>
-            <Link href="products/tshirt/The Catalyzer">
+            <Link href="products/The Catalyzer">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
               <a className="block relative rounded overflow-hidden">
                 <img alt="ecommerce" className="h-[250px] block m-auto" src="https://www.fajntricko.com/resize/e/1200/1200/files/2019-tricka/povolania/coding-pornstar/coding-pornstar-cerna.jpg/424x264" />
@@ -62,7 +62,7 @@ const Tshirts = () => {
                 <p className="mt-1">₹ 460 <span className='line-through'>{460*1.3}</span></p>
               </div>
             </div></Link>
-            <Link href="products/tshirt/Shooting Stars">
+            <Link href="products/Shooting Stars">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
               <a className="block relative rounded overflow-hidden">
                 <img alt="ecommerce" className="h-[250px] block mx-auto" src="https://www.fajntricko.com/resize/e/1200/1200/files/2019-tricka/povolania/coding-pornstar/coding-pornstar-cerna.jpg/425x265" />
@@ -73,7 +73,7 @@ const Tshirts = () => {
                 <p className="mt-1">₹ 410 <span className='line-through'>{410*1.3}</span></p>
               </div>
             </div></Link>
-            <Link href="products/tshirt/Neptune">
+            <Link href="products/Neptune">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
               <a className="block relative rounded overflow-hidden">
                 <img alt="ecommerce" className="h-[250px] block mx-auto" src="https://www.fajntricko.com/resize/e/1200/1200/files/2019-tricka/povolania/coding-pornstar/coding-pornstar-cerna.jpg/427x267" />
@@ -84,7 +84,7 @@ const Tshirts = () => {
                 <p className="mt-1">₹ 420 <span className='line-through'>{420*1.3}</span></p>
               </div>
             </div></Link>
-            <Link href="products/tshirt/400 Blows">
+            <Link href="products/400 Blows">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
               <a className="block relative rounded overflow-hidden">
                 <img alt="ecommerce" className="h-[250px] block m-auto" src="https://www.fajntricko.com/resize/e/1200/1200/files/2019-tricka/povolania/coding-pornstar/coding-pornstar-cerna.jpg/428x268" />
@@ -95,7 +95,7 @@ const Tshirts = () => {
                 <p className="mt-1">₹ 480 <span className='line-through'>{480*1.3}</span></p>
               </div>
             </div></Link>
-            <Link href="products/tshirt/The Catalyzer">
+            <Link href="products/The Catalyzer">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
               <a className="block relative rounded overflow-hidden">
                 <img alt="ecommerce" className="h-[250px] block m-auto" src="https://www.fajntricko.com/resize/e/1200/1200/files/2019-tricka/povolania/coding-pornstar/coding-pornstar-cerna.jpg/420x260" />
@@ -106,7 +106,7 @@ const Tshirts = () => {
                 <p className="mt-1">₹ 460 <span className='line-through'>{460*1.3}</span></p>
               </div>
             </div></Link>
-            <Link href="products/tshirt/Shooting Stars">
+            <Link href="products/Shooting Stars">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
               <a className="block relative rounded overflow-hidden">
                 <img alt="ecommerce" className="h-[250px] block m-auto" src="https://www.fajntricko.com/resize/e/1200/1200/files/2019-tricka/povolania/coding-pornstar/coding-pornstar-cerna.jpg/421x261" />
@@ -117,7 +117,7 @@ const Tshirts = () => {
                 <p className="mt-1">₹ 410 <span className='line-through'>{410*1.3}</span></p>
               </div>
             </div></Link>
-            <Link href="products/tshirt/Neptune">
+            <Link href="products/Neptune">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
               <a className="block relative rounded overflow-hidden">
                 <img alt="ecommerce" className="h-[250px] block m-auto" src="https://www.fajntricko.com/resize/e/1200/1200/files/2019-tricka/povolania/coding-pornstar/coding-pornstar-cerna.jpg/422x262" />
@@ -128,7 +128,7 @@ const Tshirts = () => {
                 <p className="mt-1">₹ 420 <span className='line-through'>{420*1.3}</span></p>
               </div>
             </div></Link>
-            <Link href="products/tshirt/400 Blows">
+            <Link href="products/400 Blows">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
               <a className="block relative rounded overflow-hidden">
                 <img alt="ecommerce" className="h-[250px] block m-auto" src="https://www.fajntricko.com/resize/e/1200/1200/files/2019-tricka/povolania/coding-pornstar/coding-pornstar-cerna.jpg/423x263" />
@@ -139,7 +139,7 @@ const Tshirts = () => {
                 <p className="mt-1">₹ 480 <span className='line-through'>{480*1.3}</span></p>
               </div>
             </div></Link>
-            <Link href="products/tshirt/The Catalyzer">
+            <Link href="products/The Catalyzer">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
               <a className="block relative rounded overflow-hidden">
                 <img alt="ecommerce" className="h-[250px] block m-auto" src="https://www.fajntricko.com/resize/e/1200/1200/files/2019-tricka/povolania/coding-pornstar/coding-pornstar-cerna.jpg/424x264" />
@@ -150,7 +150,7 @@ const Tshirts = () => {
                 <p className="mt-1">₹ 460 <span className='line-through'>{460*1.3}</span></p>
               </div>
             </div></Link>
-            <Link href="products/tshirt/Shooting Stars">
+            <Link href="products/Shooting Stars">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
               <a className="block relative rounded overflow-hidden">
                 <img alt="ecommerce" className="h-[250px] block mx-auto" src="https://www.fajntricko.com/resize/e/1200/1200/files/2019-tricka/povolania/coding-pornstar/coding-pornstar-cerna.jpg/425x265" />
@@ -161,7 +161,7 @@ const Tshirts = () => {
                 <p className="mt-1">₹ 410 <span className='line-through'>{410*1.3}</span></p>
               </div>
             </div></Link>
-            <Link href="products/tshirt/Neptune">
+            <Link href="products/Neptune">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
               <a className="block relative rounded overflow-hidden">
                 <img alt="ecommerce" className="h-[250px] block mx-auto" src="https://www.fajntricko.com/resize/e/1200/1200/files/2019-tricka/povolania/coding-pornstar/coding-pornstar-cerna.jpg/427x267" />
@@ -172,7 +172,7 @@ const Tshirts = () => {
                 <p className="mt-1">₹ 420 <span className='line-through'>{420*1.3}</span></p>
               </div>
             </div></Link>
-            <Link href="products/tshirt/400 Blows">
+            <Link href="products/400 Blows">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
               <a className="block relative rounded overflow-hidden">
                 <img alt="ecommerce" className="h-[250px] block m-auto" src="https://www.fajntricko.com/resize/e/1200/1200/files/2019-tricka/povolania/coding-pornstar/coding-pornstar-cerna.jpg/428x268" />
@@ -183,7 +183,7 @@ const Tshirts = () => {
                 <p className="mt-1">₹ 480 <span className='line-through'>{480*1.3}</span></p>
               </div>
             </div></Link>
-            <Link href="products/tshirt/The Catalyzer">
+            <Link href="products/The Catalyzer">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
               <a className="block relative rounded overflow-hidden">
                 <img alt="ecommerce" className="h-[250px] block m-auto" src="https://www.fajntricko.com/resize/e/1200/1200/files/2019-tricka/povolania/coding-pornstar/coding-pornstar-cerna.jpg/420x260" />
@@ -194,7 +194,7 @@ const Tshirts = () => {
                 <p className="mt-1">₹ 460 <span className='line-through'>{460*1.3}</span></p>
               </div>
             </div></Link>
-            <Link href="products/tshirt/Shooting Stars">
+            <Link href="products/Shooting Stars">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
               <a className="block relative rounded overflow-hidden">
                 <img alt="ecommerce" className="h-[250px] block m-auto" src="https://www.fajntricko.com/resize/e/1200/1200/files/2019-tricka/povolania/coding-pornstar/coding-pornstar-cerna.jpg/421x261" />
@@ -205,7 +205,7 @@ const Tshirts = () => {
                 <p className="mt-1">₹ 410 <span className='line-through'>{410*1.3}</span></p>
               </div>
             </div></Link>
-            <Link href="products/tshirt/Neptune">
+            <Link href="products/Neptune">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
               <a className="block relative rounded overflow-hidden">
                 <img alt="ecommerce" className="h-[250px] block m-auto" src="https://www.fajntricko.com/resize/e/1200/1200/files/2019-tricka/povolania/coding-pornstar/coding-pornstar-cerna.jpg/422x262" />
@@ -216,7 +216,7 @@ const Tshirts = () => {
                 <p className="mt-1">₹ 420 <span className='line-through'>{420*1.3}</span></p>
               </div>
             </div></Link>
-            <Link href="products/tshirt/400 Blows">
+            <Link href="products/400 Blows">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
               <a className="block relative rounded overflow-hidden">
                 <img alt="ecommerce" className="h-[250px] block m-auto" src="https://www.fajntricko.com/resize/e/1200/1200/files/2019-tricka/povolania/coding-pornstar/coding-pornstar-cerna.jpg/423x263" />
@@ -227,7 +227,7 @@ const Tshirts = () => {
                 <p className="mt-1">₹ 480 <span className='line-through'>{480*1.3}</span></p>
               </div>
             </div></Link>
-            <Link href="products/tshirt/The Catalyzer">
+            <Link href="products/The Catalyzer">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
               <a className="block relative rounded overflow-hidden">
                 <img alt="ecommerce" className="h-[250px] block m-auto" src="https://www.fajntricko.com/resize/e/1200/1200/files/2019-tricka/povolania/coding-pornstar/coding-pornstar-cerna.jpg/424x264" />
@@ -238,7 +238,7 @@ const Tshirts = () => {
                 <p className="mt-1">₹ 460 <span className='line-through'>{460*1.3}</span></p>
               </div>
             </div></Link>
-            <Link href="products/tshirt/Shooting Stars">
+            <Link href="products/Shooting Stars">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
               <a className="block relative rounded overflow-hidden">
                 <img alt="ecommerce" className="h-[250px] block mx-auto" src="https://www.fajntricko.com/resize/e/1200/1200/files/2019-tricka/povolania/coding-pornstar/coding-pornstar-cerna.jpg/425x265" />
@@ -249,7 +249,7 @@ const Tshirts = () => {
                 <p className="mt-1">₹ 410 <span className='line-through'>{410*1.3}</span></p>
               </div>
             </div></Link>
-            <Link href="products/tshirt/Neptune">
+            <Link href="products/Neptune">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
               <a className="block relative rounded overflow-hidden">
                 <img alt="ecommerce" className="h-[250px] block mx-auto" src="https://www.fajntricko.com/resize/e/1200/1200/files/2019-tricka/povolania/coding-pornstar/coding-pornstar-cerna.jpg/427x267" />
@@ -260,7 +260,7 @@ const Tshirts = () => {
                 <p className="mt-1">₹ 420 <span className='line-through'>{420*1.3}</span></p>
               </div>
             </div></Link>
-            <Link href="products/tshirt/400 Blows">
+            <Link href="products/400 Blows">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
               <a className="block relative rounded overflow-hidden">
                 <img alt="ecommerce" className="h-[250px] block m-auto" src="https://www.fajntricko.com/resize/e/1200/1200/files/2019-tricka/povolania/coding-pornstar/coding-pornstar-cerna.jpg/428x268" />

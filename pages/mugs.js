@@ -7,7 +7,7 @@ const Mugs = () => {
       <section className="text-gray-600 body-font w-[90%] mx-auto">
         <div className="container px-5 py-12 mx-auto">
           <div className="flex flex-wrap -m-4">
-            <Link href="products/mug/The Catalyzer">
+            <Link href="products/The Catalyzer">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
                 <a className="block relative rounded overflow-hidden">
                   <img alt="ecommerce" className="h-[250px] block m-auto" src="https://m.media-amazon.com/images/I/51oeVde2NlL._SL1000_.jpg" />
@@ -18,7 +18,7 @@ const Mugs = () => {
                   <p className="mt-1">₹ 160 <span className='line-through'>{160 * 1.3}</span></p>
                 </div>
               </div></Link>
-            <Link href="products/mug/Shooting Stars">
+            <Link href="products/Shooting Stars">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
                 <a className="block relative rounded overflow-hidden">
                   <img alt="ecommerce" className="h-[250px] block m-auto" src="https://m.media-amazon.com/images/I/51oeVde2NlL._SL1000_.jpg" />
@@ -29,7 +29,7 @@ const Mugs = () => {
                   <p className="mt-1">₹ 110 <span className='line-through'>{110 * 1.3}</span></p>
                 </div>
               </div></Link>
-            <Link href="products/mug/Neptune">
+            <Link href="products/Neptune">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
                 <a className="block relative rounded overflow-hidden">
                   <img alt="ecommerce" className="h-[250px] block m-auto" src="https://m.media-amazon.com/images/I/51oeVde2NlL._SL1000_.jpg" />
@@ -40,7 +40,7 @@ const Mugs = () => {
                   <p className="mt-1">₹ 120 <span className='line-through'>{120 * 1.3}</span></p>
                 </div>
               </div></Link>
-            <Link href="products/mug/400 Blows">
+            <Link href="products/400 Blows">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
                 <a className="block relative rounded overflow-hidden">
                   <img alt="ecommerce" className="h-[250px] block m-auto" src="https://m.media-amazon.com/images/I/51oeVde2NlL._SL1000_.jpg" />
@@ -51,7 +51,7 @@ const Mugs = () => {
                   <p className="mt-1">₹ 180 <span className='line-through'>{180 * 1.3}</span></p>
                 </div>
               </div></Link>
-            <Link href="products/mug/The Catalyzer">
+            <Link href="products/The Catalyzer">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
                 <a className="block relative rounded overflow-hidden">
                   <img alt="ecommerce" className="h-[250px] block m-auto" src="https://m.media-amazon.com/images/I/51oeVde2NlL._SL1000_.jpg" />
@@ -62,7 +62,7 @@ const Mugs = () => {
                   <p className="mt-1">₹ 160 <span className='line-through'>{160 * 1.3}</span></p>
                 </div>
               </div></Link>
-            <Link href="products/mug/Shooting Stars">
+            <Link href="products/Shooting Stars">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
                 <a className="block relative rounded overflow-hidden">
                   <img alt="ecommerce" className="h-[250px] block mx-auto" src="https://m.media-amazon.com/images/I/51oeVde2NlL._SL1000_.jpg" />
@@ -73,7 +73,7 @@ const Mugs = () => {
                   <p className="mt-1">₹ 110 <span className='line-through'>{110 * 1.3}</span></p>
                 </div>
               </div></Link>
-            <Link href="products/mug/Neptune">
+            <Link href="products/Neptune">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
                 <a className="block relative rounded overflow-hidden">
                   <img alt="ecommerce" className="h-[250px] block mx-auto" src="https://m.media-amazon.com/images/I/51oeVde2NlL._SL1000_.jpg" />
@@ -84,7 +84,7 @@ const Mugs = () => {
                   <p className="mt-1">₹ 120 <span className='line-through'>{120 * 1.3}</span></p>
                 </div>
               </div></Link>
-            <Link href="products/mug/400 Blows">
+            <Link href="products/400 Blows">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
                 <a className="block relative rounded overflow-hidden">
                   <img alt="ecommerce" className="h-[250px] block m-auto" src="https://m.media-amazon.com/images/I/51oeVde2NlL._SL1000_.jpg" />
@@ -95,7 +95,7 @@ const Mugs = () => {
                   <p className="mt-1">₹ 180 <span className='line-through'>{180 * 1.3}</span></p>
                 </div>
               </div></Link>
-            <Link href="products/mug/The Catalyzer">
+            <Link href="products/The Catalyzer">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
                 <a className="block relative rounded overflow-hidden">
                   <img alt="ecommerce" className="h-[250px] block m-auto" src="https://m.media-amazon.com/images/I/51oeVde2NlL._SL1000_.jpg" />
@@ -106,7 +106,7 @@ const Mugs = () => {
                   <p className="mt-1">₹ 160 <span className='line-through'>{160 * 1.3}</span></p>
                 </div>
               </div></Link>
-            <Link href="products/mug/Shooting Stars">
+            <Link href="products/Shooting Stars">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
                 <a className="block relative rounded overflow-hidden">
                   <img alt="ecommerce" className="h-[250px] block m-auto" src="https://m.media-amazon.com/images/I/51oeVde2NlL._SL1000_.jpg" />
@@ -117,7 +117,7 @@ const Mugs = () => {
                   <p className="mt-1">₹ 110 <span className='line-through'>{110 * 1.3}</span></p>
                 </div>
               </div></Link>
-            <Link href="products/mug/Neptune">
+            <Link href="products/Neptune">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
                 <a className="block relative rounded overflow-hidden">
                   <img alt="ecommerce" className="h-[250px] block m-auto" src="https://m.media-amazon.com/images/I/51oeVde2NlL._SL1000_.jpg" />
@@ -128,7 +128,7 @@ const Mugs = () => {
                   <p className="mt-1">₹ 120 <span className='line-through'>{120 * 1.3}</span></p>
                 </div>
               </div></Link>
-            <Link href="products/mug/400 Blows">
+            <Link href="products/400 Blows">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
                 <a className="block relative rounded overflow-hidden">
                   <img alt="ecommerce" className="h-[250px] block m-auto" src="https://m.media-amazon.com/images/I/51oeVde2NlL._SL1000_.jpg" />
@@ -139,7 +139,7 @@ const Mugs = () => {
                   <p className="mt-1">₹ 180 <span className='line-through'>{180 * 1.3}</span></p>
                 </div>
               </div></Link>
-            <Link href="products/mug/The Catalyzer">
+            <Link href="products/The Catalyzer">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
                 <a className="block relative rounded overflow-hidden">
                   <img alt="ecommerce" className="h-[250px] block m-auto" src="https://m.media-amazon.com/images/I/51oeVde2NlL._SL1000_.jpg" />
@@ -150,7 +150,7 @@ const Mugs = () => {
                   <p className="mt-1">₹ 160 <span className='line-through'>{160 * 1.3}</span></p>
                 </div>
               </div></Link>
-            <Link href="products/mug/Shooting Stars">
+            <Link href="products/Shooting Stars">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
                 <a className="block relative rounded overflow-hidden">
                   <img alt="ecommerce" className="h-[250px] block mx-auto" src="https://m.media-amazon.com/images/I/51oeVde2NlL._SL1000_.jpg" />
@@ -161,7 +161,7 @@ const Mugs = () => {
                   <p className="mt-1">₹ 110 <span className='line-through'>{110 * 1.3}</span></p>
                 </div>
               </div></Link>
-            <Link href="products/mug/Neptune">
+            <Link href="products/Neptune">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
                 <a className="block relative rounded overflow-hidden">
                   <img alt="ecommerce" className="h-[250px] block mx-auto" src="https://m.media-amazon.com/images/I/51oeVde2NlL._SL1000_.jpg" />
@@ -172,7 +172,7 @@ const Mugs = () => {
                   <p className="mt-1">₹ 120 <span className='line-through'>{120 * 1.3}</span></p>
                 </div>
               </div></Link>
-            <Link href="products/mug/400 Blows">
+            <Link href="products/400 Blows">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
                 <a className="block relative rounded overflow-hidden">
                   <img alt="ecommerce" className="h-[250px] block m-auto" src="https://m.media-amazon.com/images/I/51oeVde2NlL._SL1000_.jpg" />
@@ -183,7 +183,7 @@ const Mugs = () => {
                   <p className="mt-1">₹ 180 <span className='line-through'>{180 * 1.3}</span></p>
                 </div>
               </div></Link>
-            <Link href="products/mug/The Catalyzer">
+            <Link href="products/The Catalyzer">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
                 <a className="block relative rounded overflow-hidden">
                   <img alt="ecommerce" className="h-[250px] block m-auto" src="https://m.media-amazon.com/images/I/51oeVde2NlL._SL1000_.jpg" />
@@ -194,7 +194,7 @@ const Mugs = () => {
                   <p className="mt-1">₹ 160 <span className='line-through'>{160 * 1.3}</span></p>
                 </div>
               </div></Link>
-            <Link href="products/mug/Shooting Stars">
+            <Link href="products/Shooting Stars">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
                 <a className="block relative rounded overflow-hidden">
                   <img alt="ecommerce" className="h-[250px] block m-auto" src="https://m.media-amazon.com/images/I/51oeVde2NlL._SL1000_.jpg" />
@@ -205,7 +205,7 @@ const Mugs = () => {
                   <p className="mt-1">₹ 110 <span className='line-through'>{110 * 1.3}</span></p>
                 </div>
               </div></Link>
-            <Link href="products/mug/Neptune">
+            <Link href="products/Neptune">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
                 <a className="block relative rounded overflow-hidden">
                   <img alt="ecommerce" className="h-[250px] block m-auto" src="https://m.media-amazon.com/images/I/51oeVde2NlL._SL1000_.jpg" />
@@ -216,7 +216,7 @@ const Mugs = () => {
                   <p className="mt-1">₹ 120 <span className='line-through'>{120 * 1.3}</span></p>
                 </div>
               </div></Link>
-            <Link href="products/mug/400 Blows">
+            <Link href="products/400 Blows">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
                 <a className="block relative rounded overflow-hidden">
                   <img alt="ecommerce" className="h-[250px] block m-auto" src="https://m.media-amazon.com/images/I/51oeVde2NlL._SL1000_.jpg" />
@@ -227,7 +227,7 @@ const Mugs = () => {
                   <p className="mt-1">₹ 180 <span className='line-through'>{180 * 1.3}</span></p>
                 </div>
               </div></Link>
-            <Link href="products/mug/The Catalyzer">
+            <Link href="products/The Catalyzer">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
                 <a className="block relative rounded overflow-hidden">
                   <img alt="ecommerce" className="h-[250px] block m-auto" src="https://m.media-amazon.com/images/I/51oeVde2NlL._SL1000_.jpg" />
@@ -238,7 +238,7 @@ const Mugs = () => {
                   <p className="mt-1">₹ 160 <span className='line-through'>{160 * 1.3}</span></p>
                 </div>
               </div></Link>
-            <Link href="products/mug/Shooting Stars">
+            <Link href="products/Shooting Stars">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
                 <a className="block relative rounded overflow-hidden">
                   <img alt="ecommerce" className="h-[250px] block mx-auto" src="https://m.media-amazon.com/images/I/51oeVde2NlL._SL1000_.jpg" />
@@ -249,7 +249,7 @@ const Mugs = () => {
                   <p className="mt-1">₹ 110 <span className='line-through'>{110 * 1.3}</span></p>
                 </div>
               </div></Link>
-            <Link href="products/mug/Neptune">
+            <Link href="products/Neptune">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
                 <a className="block relative rounded overflow-hidden">
                   <img alt="ecommerce" className="h-[250px] block mx-auto" src="https://m.media-amazon.com/images/I/51oeVde2NlL._SL1000_.jpg" />
@@ -260,7 +260,7 @@ const Mugs = () => {
                   <p className="mt-1">₹ 120 <span className='line-through'>{120 * 1.3}</span></p>
                 </div>
               </div></Link>
-            <Link href="products/mug/400 Blows">
+            <Link href="products/400 Blows">
               <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
                 <a className="block relative rounded overflow-hidden">
                   <img alt="ecommerce" className="h-[250px] block m-auto" src="https://m.media-amazon.com/images/I/51oeVde2NlL._SL1000_.jpg" />

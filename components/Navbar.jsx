@@ -4,7 +4,7 @@ import { BiCartAlt } from 'react-icons/bi'
 import Cart from './Cart'
 import { useRef, forwardRef } from "react"
 
-const Navbar = () => {
+const Navbar = ({cart, addToCart, removeFromToCart, clearCart, subTotal}) => {
 
     const ref = useRef()
 
@@ -40,7 +40,7 @@ const Navbar = () => {
                 <button className="mx-3 px-2 py-3 text-2xl" onClick={handleSideToggle} ><BiCartAlt /></button>
             </div>
             <div ref={ref} className="cartBar absolute top-0 right-0 h-full transform transition-transform translate-x-full z-50">
-                <Cart handleSideToggle={handleSideToggle} />
+                <Cart cart={cart} addToCart={addToCart} clearCart={clearCart} removeFromToCart={removeFromToCart} subTotal={subTotal} handleSideToggle={handleSideToggle} />
             </div>
         </div>
     )
