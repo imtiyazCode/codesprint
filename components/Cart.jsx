@@ -17,11 +17,11 @@ const Cart = ({ cart, addToCart, removeFromToCart, clearCart, subTotal, handleSi
           {Object.keys(cart).map((k)=>(
             <li key={k}>
               <div className="item flex items-center my-4 space-x-3">
-                <div className="itemName">Tshirt - Print and Wear the code</div>
+                <div className="itemName">{cart[k].name}</div>
                 <div className="itemCounter flex space-x-2 items-center text-lg">
-                  <AiOutlineMinusCircle className='cursor-pointer' />
-                  <span>1</span>
-                  <AiOutlinePlusCircle className='cursor-pointer' />
+                  <AiOutlineMinusCircle className='cursor-pointer' onClick={()=>removeFromToCart(k, 1, cart[k].price, cart[k].name, cart[k].size, cart[k].variant)} />
+                  <span>{cart[k].qty}</span>
+                  <AiOutlinePlusCircle className='cursor-pointer'  onClick={()=>addToCart(k, 1, cart[k].price, cart[k].name, cart[k].size, cart[k].variant)} />
                 </div>
               </div>
             </li>
