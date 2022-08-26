@@ -13,6 +13,9 @@ function MyApp({ Component, pageProps }) {
     try {
       if (localStorage.getItem("cart")) {
         setCart(JSON.parse(localStorage.getItem("cart")));
+
+        let subt = countSubTotal(JSON.parse(localStorage.getItem("cart")))
+        setSubTotal(subt)
       }
     } catch (error) {
       console.error(error);
@@ -25,6 +28,11 @@ function MyApp({ Component, pageProps }) {
   const saveCart = (myCart) => {
     localStorage.setItem("cart", JSON.stringify(myCart));
 
+    let subt = countSubTotal(myCart);
+    setSubTotal(subt);
+  }
+
+  const countSubTotal = (myCart) => {
     let subt = 0;
 
     let keys = Object.keys(myCart);
@@ -32,7 +40,7 @@ function MyApp({ Component, pageProps }) {
       subt += myCart[keys[i]].price * myCart[keys[i]].qty;
     }
 
-    setSubTotal(subt);
+    return subt;
   }
 
   const addToCart = (itemCode, qty, price, name, size, variant) => {

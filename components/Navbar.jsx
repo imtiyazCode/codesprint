@@ -10,13 +10,11 @@ const Navbar = ({cart, addToCart, removeFromToCart, clearCart, subTotal}) => {
 
     const handleSideToggle = () => {
         if (ref.current.classList.contains("translate-x-full")) {
-            // ref.current.classList.remove('hidden');
             ref.current.classList.remove('translate-x-full');
             ref.current.classList.add('translate-x-0')
         }
         else {
-            ref.current.classList.remove('translate-x-0')
-            // ref.current.classList.add('hidden');
+            ref.current.classList.remove('translate-x-0');
             ref.current.classList.add('translate-x-full');
         }
     }
@@ -39,7 +37,7 @@ const Navbar = ({cart, addToCart, removeFromToCart, clearCart, subTotal}) => {
             <div className="cta align-middle text-[#33384d] font-bold">
                 <button className="mx-3 px-2 py-3 text-2xl" onClick={handleSideToggle} ><BiCartAlt /></button>
             </div>
-            <div ref={ref} className="cartBar absolute top-0 right-0 h-full transform transition-transform translate-x-full z-50">
+            <div ref={ref} className="cartBar absolute top-0 right-0 h-full transform transition-transform translate-x-full z-20 ">
                 <Cart cart={cart} addToCart={addToCart} clearCart={clearCart} removeFromToCart={removeFromToCart} subTotal={subTotal} handleSideToggle={handleSideToggle} />
             </div>
         </div>
