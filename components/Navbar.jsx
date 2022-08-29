@@ -3,8 +3,9 @@ import Link from "next/link"
 import { BiCartAlt } from 'react-icons/bi'
 import Cart from './Cart'
 import { useRef, forwardRef } from "react"
+import { RiAccountCircleFill } from 'react-icons/ri'
 
-const Navbar = ({cart, addToCart, removeFromToCart, clearCart, subTotal}) => {
+const Navbar = ({ cart, addToCart, removeFromToCart, clearCart, subTotal }) => {
 
     const ref = useRef()
 
@@ -35,7 +36,8 @@ const Navbar = ({cart, addToCart, removeFromToCart, clearCart, subTotal}) => {
                 </ul>
             </nav>
             <div className="cta align-middle text-[#33384d] font-bold">
-                <button className="mx-3 px-2 py-3 text-2xl" onClick={handleSideToggle} ><BiCartAlt /></button>
+                <Link href={"/login"}><button className="px-2 py-3 text-2xl" ><RiAccountCircleFill /></button></Link>
+                <button className="px-2 py-3 text-2xl" onClick={handleSideToggle} ><BiCartAlt /></button>
             </div>
             <div ref={ref} className="cartBar absolute top-0 right-0 h-full transform transition-transform translate-x-full z-20 ">
                 <Cart cart={cart} addToCart={addToCart} clearCart={clearCart} removeFromToCart={removeFromToCart} subTotal={subTotal} handleSideToggle={handleSideToggle} />
