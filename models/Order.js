@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const { Schema, model } = mongoose;
+const { Schema, model, models } = mongoose;
 
 const orderSchema = new Schema({
     userId: { type: String, required: true },
@@ -12,6 +12,6 @@ const orderSchema = new Schema({
     status: { type: String, default: 'Pending' }
 }, { timestamps: true });
 
-const Order =  model('Order', orderSchema)
+const Order = models.Order || model('Order', orderSchema)
 
 export default Order;

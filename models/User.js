@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const { Schema, model } = mongoose;
+const { Schema, model, models } = mongoose;
 
 const userSchema = new Schema({
     name: { type: String, required: true },
@@ -7,6 +7,6 @@ const userSchema = new Schema({
     password: { type: String, required: true }
 }, { timestamps: true });
 
-const User = model('User', userSchema)
+const User = models.User || model('User', userSchema)
 
 export default User;
