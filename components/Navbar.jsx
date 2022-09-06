@@ -24,7 +24,7 @@ const Navbar = ({ cart, addToCart, removeFromToCart, clearCart, subTotal }) => {
         <div className="flex flex-col sm:flex-row justify-between py-2 px-3 items-center shadow-md overflow-x-hidden">
             <div className="logo cursor-pointer">
                 <Link href="/">
-                    <Image src={"/codesprintlogo.png"} width={200} height={45} />
+                    <a><Image src={"/codesprintlogo.png"} width={200} height={45} /></a>
                 </Link>
             </div>
             <nav className="nav align-middle text-[#33384d] font-bold" >

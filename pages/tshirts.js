@@ -25,7 +25,7 @@ const Tshirts = ({ products }) => {
                     </div>
                     <div className="mt-1">
                       {products[item].color.map((clr)=>(
-                        <button className={`border-2 border-gray-300 ml-1 rounded-full w-6 h-6 focus:outline-none ${clr=="black" ? 'bg-black' : `bg-${clr}-600`}`}></button>
+                        <button key={clr} className={`border-2 border-gray-300 ml-1 rounded-full w-6 h-6 focus:outline-none ${clr=="black" ? "bg-black" : "bg-"+clr+"-600"}`}></button>
                       ))}
                     </div>
                     <p className="mt-1">₹ {products[item].price} </p>
