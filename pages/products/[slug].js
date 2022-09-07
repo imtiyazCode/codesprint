@@ -5,9 +5,11 @@ import Product from '../../models/Product';
 
 const hoodie = ({ addToCart, product, varients }) => {
 
-    console.log(product, varients);
     const router = useRouter()
     const { slug } = router.query
+
+    const [color, setColor] = useState(product.color)
+    const [size, setSize] = useState(product.size[0])
 
     const [pin, setPin] = useState()
     const [serviceable, setServiceable] = useState()
@@ -25,6 +27,12 @@ const hoodie = ({ addToCart, product, varients }) => {
         } else {
             setServiceable(false)
         }
+    }
+
+    const refreshVarient = (e, varCol) => {
+        let url = `http://localhost:3000/products/${varients[varCol].slug}`
+        setColor(varCol);
+        window.location = url;
     }
 
     return <section className="text-gray-600 body-font overflow-hidden">
@@ -56,20 +64,19 @@ const hoodie = ({ addToCart, product, varients }) => {
                     </div>
                     <p className="leading-relaxed">Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps cornhole raw denim forage brooklyn. Everyday carry +1 seitan poutine tumeric. Gastropub blue bottle austin listicle pour-over, neutra jean shorts keytar banjo tattooed umami cardigan.</p>
                     <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
-                        <div className="flex">
+                        <div className="flex items-center">
                             <span className="mr-3">Color</span>
                             {Object.keys(varients).map((varCol) => (
-                                <button key={varCol} className={`border-2 border-gray-300 ml-1 rounded-full w-6 h-6 focus:outline-none ${varCol == "black" ? "bg-black" : "bg-" + varCol + "-600"}`}></button>
+                                <button onClick={(e) => {refreshVarient(e, varCol)}} key={varCol} className={`border-2 ml-1 rounded-full focus:outline-none ${varCol == "black" ? "bg-black" : "bg-" + varCol + "-600"} ${varCol==product.color ? "border-purple-600 w-7 h-7":"border-gray-300 w-6 h-6"}`}></button>
                             ))}
                         </div>
                         <div className="flex ml-6 items-center">
                             <span className="mr-3">Size</span>
                             <div className="relative">
-                                <select className="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-purple-200 focus:border-purple-500 text-base pl-3 pr-10">
-                                    <option>SM</option>
-                                    <option>M</option>
-                                    <option>L</option>
-                                    <option>XL</option>
+                                <select onChange={(e) => {setSize(e.target.value)}} className="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-purple-200 focus:border-purple-500 text-base pl-3 pr-10">
+                                    {product.size.map((s) => (
+                                        <option>{s}</option>
+                                    ))}
                                 </select>
                                 <span className="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
                                     <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4" viewBox="0 0 24 24">
@@ -81,7 +88,7 @@ const hoodie = ({ addToCart, product, varients }) => {
                     </div>
                     <div className="flex">
                         <span className="title-font font-medium text-2xl text-gray-900">₹{product.price}</span>
-                        <button onClick={() => addToCart(slug, 1, 499, "Wear The Code", "XL", "Black")} className="flex ml-auto text-white bg-purple-500 border-0 py-2 px-3 md:px-6 focus:outline-none hover:bg-purple-600 rounded">Add To Cart</button>
+                        <button onClick={() => addToCart(product.slug, 1, product.price, product.title, size, product.color)} className="flex ml-auto text-white bg-purple-500 border-0 py-2 px-3 md:px-6 focus:outline-none hover:bg-purple-600 rounded">Add To Cart</button>
                         <button className="flex ml-3 md:ml-5 text-white bg-purple-600 border-0 py-2 px-3 md:px-6 focus:outline-none hover:bg-purple-700 rounded">Buy Now</button>
                     </div>
                     <div className="checkPin flex space-x-2 mt-6 text-sm">

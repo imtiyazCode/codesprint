@@ -48,6 +48,7 @@ function MyApp({ Component, pageProps }) {
 
     if (itemCode in cart) {
       newCart[itemCode].qty = cart[itemCode].qty + qty;
+      newCart[itemCode].size = size;
     } else {
       newCart[itemCode] = { qty, price, name, size, variant }
     }
