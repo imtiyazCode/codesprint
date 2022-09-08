@@ -12,7 +12,7 @@ const Footer = () => {
                             <img src="/codesprintlogo.png" alt="" />
                         </a>
                         </Link>
-                        <p className="mt-2 text-sm text-gray-500 px-3">Print and wear the code</p>
+                        <p className="mt-2 text-sm text-gray-500 px-3">Print and wear the &lt;code/&gt; - Premium tShirts, hoodies and many more..</p>
                     </div>
                     <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
                         <div className="lg:w-1/4 md:w-1/2 w-full px-4">
@@ -94,8 +94,9 @@ const Footer = () => {
                 </div>
                 <div className="bg-gray-100">
                     <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-                        <p className="text-gray-500 text-sm text-center sm:text-left">© 2022 CodeClash —
+                        <p className="text-gray-500 text-sm text-center sm:text-left">© 2022 CodeClash — 
                             <a href="https://instagram.com/code.clash" rel="noopener noreferrer" className="text-gray-600 ml-1" target="_blank">@code.clash</a>
+                            - All right reserved
                         </p>
                         <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
                             <a className="text-gray-500">
