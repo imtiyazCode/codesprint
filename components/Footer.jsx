@@ -1,22 +1,23 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const Footer = () => {
     return (
         <div>
-            <footer className="text-gray-600 body-font">
+            <footer className="text-[gray-600] bg-[#f3f4f6] body-font">
                 <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
                     <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
                         <Link href={"/"}>
-                        <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-                            <img src="/codesprintlogo.png" alt="" />
-                        </a>
+                            <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                                <img src="/codesprintlogo.png" alt="" />
+                            </a>
                         </Link>
                         <p className="mt-2 text-sm text-gray-500 px-3">Print and wear the &lt;code/&gt; - Premium tShirts, hoodies and many more..</p>
                     </div>
                     <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
                         <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+                            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">SHOP</h2>
                             <div className="testing_colors">
                                 <div className="bg-blue-600"></div>
                                 <div className="bg-pink-600"></div>
@@ -26,75 +27,52 @@ const Footer = () => {
                             </div>
                             <nav className="list-none mb-10">
                                 <li>
-                                    <a className="text-gray-600 hover:text-gray-800">First Link</a>
+                                    <Link href="/hoodies"><a className="text-gray-600 hover:text-gray-800">Hoodies</a></Link>
                                 </li>
                                 <li>
-                                    <a className="text-gray-600 hover:text-gray-800">Second Link</a>
+                                    <Link href="/tshirts"><a className="text-gray-600 hover:text-gray-800">T-Shirts</a></Link>
                                 </li>
                                 <li>
-                                    <a className="text-gray-600 hover:text-gray-800">Third Link</a>
+                                    <Link href="/mugs"><a className="text-gray-600 hover:text-gray-800">Mug</a></Link>
                                 </li>
                                 <li>
-                                    <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                                    <Link href="/stickers"><a className="text-gray-600 hover:text-gray-800">Stickers</a></Link>
                                 </li>
                             </nav>
                         </div>
                         <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+                            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CUSTOMER SERVICE</h2>
                             <nav className="list-none mb-10">
                                 <li>
-                                    <a className="text-gray-600 hover:text-gray-800">First Link</a>
+                                    <a className="text-gray-600 hover:text-gray-800">Contact Us</a>
                                 </li>
                                 <li>
-                                    <a className="text-gray-600 hover:text-gray-800">Second Link</a>
+                                    <a className="text-gray-600 hover:text-gray-800">About Us</a>
                                 </li>
                                 <li>
-                                    <a className="text-gray-600 hover:text-gray-800">Third Link</a>
-                                </li>
-                                <li>
-                                    <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                                    <a className="text-gray-600 hover:text-gray-800">Return Policy</a>
                                 </li>
                             </nav>
                         </div>
                         <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+                            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">POLICY</h2>
                             <nav className="list-none mb-10">
                                 <li>
-                                    <a className="text-gray-600 hover:text-gray-800">First Link</a>
+                                    <a className="text-gray-600 hover:text-gray-800">Privacy Policy</a>
                                 </li>
                                 <li>
-                                    <a className="text-gray-600 hover:text-gray-800">Second Link</a>
-                                </li>
-                                <li>
-                                    <a className="text-gray-600 hover:text-gray-800">Third Link</a>
-                                </li>
-                                <li>
-                                    <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                                    <a className="text-gray-600 hover:text-gray-800">Terms and Conditions</a>
                                 </li>
                             </nav>
                         </div>
                         <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
-                            <nav className="list-none mb-10">
-                                <li>
-                                    <a className="text-gray-600 hover:text-gray-800">First Link</a>
-                                </li>
-                                <li>
-                                    <a className="text-gray-600 hover:text-gray-800">Second Link</a>
-                                </li>
-                                <li>
-                                    <a className="text-gray-600 hover:text-gray-800">Third Link</a>
-                                </li>
-                                <li>
-                                    <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
-                                </li>
-                            </nav>
+                            <Image src={"/pay.png"} width={400} height={169}/>
                         </div>
                     </div>
                 </div>
                 <div className="bg-gray-100">
                     <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-                        <p className="text-gray-500 text-sm text-center sm:text-left">© 2022 CodeClash — 
+                        <p className="text-gray-500 text-sm text-center sm:text-left">© 2022 CodeClash —
                             <a href="https://instagram.com/code.clash" rel="noopener noreferrer" className="text-gray-600 ml-1" target="_blank">@code.clash</a>
                             - All right reserved
                         </p>
