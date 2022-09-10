@@ -5,47 +5,47 @@ import Link from 'next/link';
 
 const Checkout = ({ cart, addToCart, removeFromToCart, subTotal }) => {
   return (
-    <div className='container m-auto w-[95%]' >
+    <div className='container m-auto w-[95%] my-8' >
       <h1 className='text-center my-8 font-bold text-3xl'>Checkout</h1>
 
       <h2 className='font-semibold text-xl mb-3'>1. Delhivery Details</h2>
 
       <div className="md:flex mx-auto my-2">
-        <div class="w-full md:w-1/2 mb-2 px-2">
-          <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+        <div className="w-full md:w-1/2 mb-2 px-2">
+          <label htmlFor="name" className="leading-7 text-sm text-gray-600">Name</label>
           <input type="text" id="name" name="name" className="w-full bg-white rounded border border-gray-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
         </div>
-        <div class="w-full md:w-1/2 mb-2 px-2">
-          <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+        <div className="w-full md:w-1/2 mb-2 px-2">
+          <label htmlFor="email" className="leading-7 text-sm text-gray-600">Email</label>
           <input type="email" id="email" name="email" className="w-full bg-white rounded border border-gray-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
         </div>
       </div>
 
       <div className="md:flex mx-auto my-2">
-        <div class="md:w-full mb-2 px-2">
-          <label for="address" class="leading-7 text-sm text-gray-600">Address</label>
+        <div className="md:w-full mb-2 px-2">
+          <label htmlFor="address" className="leading-7 text-sm text-gray-600">Address</label>
           <textarea name="address" id="address" cols="30" rows="2" className="w-full bg-white rounded border border-gray-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"></textarea>
         </div>
       </div>
 
       <div className="md:flex mx-auto my-2">
-        <div class="w-full md:w-1/2 mb-2 px-2">
-          <label for="phone" class="leading-7 text-sm text-gray-600">Phone</label>
+        <div className="w-full md:w-1/2 mb-2 px-2">
+          <label htmlFor="phone" className="leading-7 text-sm text-gray-600">Phone</label>
           <input type="phone" id="phone" name="phone" className="w-full bg-white rounded border border-gray-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
         </div>
-        <div class="w-full md:w-1/2 mb-2 px-2">
-          <label for="city" class="leading-7 text-sm text-gray-600">City</label>
+        <div className="w-full md:w-1/2 mb-2 px-2">
+          <label htmlFor="city" className="leading-7 text-sm text-gray-600">City</label>
           <input type="text" id="city" name="city" className="w-full bg-white rounded border border-gray-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
         </div>
       </div>
 
       <div className="md:flex mx-auto my-2">
-        <div class="w-full md:w-1/2 mb-2 px-2">
-          <label for="state" class="leading-7 text-sm text-gray-600">State</label>
+        <div className="w-full md:w-1/2 mb-2 px-2">
+          <label htmlFor="state" className="leading-7 text-sm text-gray-600">State</label>
           <input type="text" id="state" name="state" className="w-full bg-white rounded border border-gray-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
         </div>
-        <div class="w-full md:w-1/2 mb-2 px-2">
-          <label for="pincode" class="leading-7 text-sm text-gray-600">Pincode</label>
+        <div className="w-full md:w-1/2 mb-2 px-2">
+          <label htmlFor="pincode" className="leading-7 text-sm text-gray-600">Pincode</label>
           <input type="text" id="pincode" name="pincode" className="w-full bg-white rounded border border-gray-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
         </div>
       </div>

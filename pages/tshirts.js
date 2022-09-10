@@ -20,7 +20,7 @@ const Tshirts = ({ products }) => {
                     <h2 className="text-gray-900 title-font text-lg font-medium">{products[item].title}</h2>
                     <div className="mt-1">
                       {products[item].size.map((size)=>(
-                        <span className='border border-gray-300 px-1 mx-1 text-sm rounded-sm' >{size.toUpperCase()}</span>
+                        <span key={size} className='border border-gray-300 px-1 mx-1 text-sm rounded-sm' >{size.toUpperCase()}</span>
                       ))}
                     </div>
                     <div className="mt-1">

@@ -29,10 +29,10 @@ const Navbar = ({ cart, addToCart, removeFromToCart, clearCart, subTotal }) => {
             </div>
             <nav className="nav align-middle text-[#33384d] font-bold" >
                 <ul className="flex space-x-2 sm:space-x-4 md:space-x-6 ">
-                    <Link href={"/hoodies"} ><a><li className="px-2 py-3 cursor-pointer" >Hoodies</li></a></Link>
-                    <Link href={"/tshirts"} ><a><li className="px-2 py-3 cursor-pointer" >TShirts</li></a></Link>
-                    <Link href={"/mugs"} ><a><li className="px-2 py-3 cursor-pointer" >Mugs</li></a></Link>
-                    <Link href={"/stickers"}><a><li className="px-2 py-3 cursor-pointer" >Stickers</li></a></Link>
+                    <Link href={"/hoodies"} ><a><li className="px-2 py-3 cursor-pointer hover:text-purple-700" >Hoodies</li></a></Link>
+                    <Link href={"/tshirts"} ><a><li className="px-2 py-3 cursor-pointer hover:text-purple-700" >TShirts</li></a></Link>
+                    <Link href={"/mugs"} ><a><li className="px-2 py-3 cursor-pointer hover:text-purple-700" >Mugs</li></a></Link>
+                    <Link href={"/stickers"}><a><li className="px-2 py-3 cursor-pointer hover:text-purple-700" >Stickers</li></a></Link>
                 </ul>
             </nav>
             <div className="cta align-middle text-[#33384d] font-bold">

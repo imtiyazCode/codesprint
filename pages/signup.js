@@ -19,23 +19,23 @@ const Signup = () => {
         <form className="mt-8 space-y-6 bg-white p-10 rounded-lg shadow" action="#" method="POST">
           <div className="rounded-md shadow-sm space-y-5">
             <div>
-              <label for="name" className="">Name</label>
-              <input id="name" name="name" type="text" autocomplete="name" required
+              <label htmlFor="name" className="">Name</label>
+              <input id="name" name="name" type="text" autoComplete="name" required
                 className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 text-gray-900 rounded-t-md focus:outline-none focus:ring-purple-500 focus:border-purple-500 focus:z-10 sm:text-sm my-1" />
             </div>
             <div>
-              <label for="email-address" className="">Email address</label>
-              <input id="email-address" name="email" type="email" autocomplete="email" required
+              <label htmlFor="email-address" className="">Email address</label>
+              <input id="email-address" name="email" type="email" autoComplete="email" required
                 className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 text-gray-900 rounded-t-md focus:outline-none focus:ring-purple-500 focus:border-purple-500 focus:z-10 sm:text-sm my-1" />
             </div>
             <div>
-              <label for="phone" className="">Mobile Number</label>
-              <input id="phone" name="phone" type="number" autocomplete="phone"
+              <label htmlFor="phone" className="">Mobile Number</label>
+              <input id="phone" name="phone" type="number" autoComplete="phone"
                 className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 text-gray-900 rounded-t-md focus:outline-none focus:ring-purple-500 focus:border-purple-500 focus:z-10 sm:text-sm my-1" />
             </div>
             <div>
-              <label for="password" className="">Password</label>
-              <input id="password" name="password" type="password" autocomplete="current-password" required
+              <label htmlFor="password" className="">Password</label>
+              <input id="password" name="password" type="password" autoComplete="current-password" required
                 className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 text-gray-900 rounded-t-md focus:outline-none focus:ring-purple-500 focus:border-purple-500 focus:z-10 sm:text-sm my-1" />
             </div>
           </div>

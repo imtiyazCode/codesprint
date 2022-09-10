@@ -1,12 +1,8 @@
-import { useRouter } from 'next/router';
 import { useState } from 'react';
 import mongoose from 'mongoose';
 import Product from '../../models/Product';
 
 const hoodie = ({ addToCart, product, varients }) => {
-
-    const router = useRouter()
-    const { slug } = router.query
 
     const [color, setColor] = useState(product.color)
     const [size, setSize] = useState(product.size[0])
@@ -75,7 +71,7 @@ const hoodie = ({ addToCart, product, varients }) => {
                             <div className="relative">
                                 <select onChange={(e) => {setSize(e.target.value)}} className="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-purple-200 focus:border-purple-500 text-base pl-3 pr-10">
                                     {product.size.map((s) => (
-                                        <option>{s}</option>
+                                        <option key={s} value={s}>{s}</option>
                                     ))}
                                 </select>
                                 <span className="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
