@@ -2,7 +2,7 @@ import { useState } from 'react';
 import mongoose from 'mongoose';
 import Product from '../../models/Product';
 
-const hoodie = ({ addToCart, product, varients }) => {
+const hoodie = ({ buyNow, addToCart, product, varients }) => {
 
     const [color, setColor] = useState(product.color)
     const [size, setSize] = useState(product.size[0])
@@ -85,7 +85,7 @@ const hoodie = ({ addToCart, product, varients }) => {
                     <div className="flex">
                         <span className="title-font font-medium text-2xl text-gray-900">₹{product.price}</span>
                         <button onClick={() => addToCart(product.slug, 1, product.price, product.title, size, product.color)} className="flex ml-auto text-white bg-purple-500 border-0 py-2 px-3 md:px-6 focus:outline-none hover:bg-purple-600 rounded">Add To Cart</button>
-                        <button className="flex ml-3 md:ml-5 text-white bg-purple-600 border-0 py-2 px-3 md:px-6 focus:outline-none hover:bg-purple-700 rounded">Buy Now</button>
+                        <button onClick={() => buyNow(product.slug, 1, product.price, product.title, size, product.color)} className="flex ml-3 md:ml-5 text-white bg-purple-600 border-0 py-2 px-3 md:px-6 focus:outline-none hover:bg-purple-700 rounded">Buy Now</button>
                     </div>
                     <div className="checkPin flex space-x-2 mt-6 text-sm">
                         <input onChange={onChangePin} className='px-2 py-1 border-2 border-gray-400 rounded' type="number" placeholder='Enter Your Pincode' />
