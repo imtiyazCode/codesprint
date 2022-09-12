@@ -2,8 +2,10 @@ import Image from "next/image"
 import Link from "next/link"
 import { BiCartAlt } from 'react-icons/bi'
 import Cart from './Cart'
-import { useRef, forwardRef } from "react"
-import { RiAccountCircleFill } from 'react-icons/ri'
+import { useRef } from "react"
+import { RiAccountCircleFill } from 'react-icons/ri';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Navbar = ({ cart, addToCart, removeFromToCart, clearCart, subTotal }) => {
 
@@ -18,6 +20,18 @@ const Navbar = ({ cart, addToCart, removeFromToCart, clearCart, subTotal }) => {
             ref.current.classList.remove('translate-x-0');
             ref.current.classList.add('translate-x-full');
         }
+    }
+
+    const notifyClrCart = () => {
+        toast.info('Your Cart is cleared', {
+            position: "top-right",
+            autoClose: 2500,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+        });
     }
 
     return (
@@ -40,7 +54,8 @@ const Navbar = ({ cart, addToCart, removeFromToCart, clearCart, subTotal }) => {
                 <button className="px-2 py-3 text-2xl" onClick={handleSideToggle} ><BiCartAlt /></button>
             </div>
             <div ref={ref} className="cartBar absolute top-0 right-0 h-full transform transition-transform translate-x-full z-20 ">
-                <Cart cart={cart} addToCart={addToCart} clearCart={clearCart} removeFromToCart={removeFromToCart} subTotal={subTotal} handleSideToggle={handleSideToggle} />
+            <ToastContainer />
+                <Cart cart={cart} addToCart={addToCart} clearCart={() => { clearCart(); notifyClrCart() }} removeFromToCart={removeFromToCart} subTotal={subTotal} handleSideToggle={handleSideToggle} />
             </div>
         </div>
     )

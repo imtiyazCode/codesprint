@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import mongoose from 'mongoose';
 import Product from '../../models/Product';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const hoodie = ({ buyNow, addToCart, product, varients }) => {
 
@@ -9,6 +11,18 @@ const hoodie = ({ buyNow, addToCart, product, varients }) => {
 
     const [pin, setPin] = useState()
     const [serviceable, setServiceable] = useState()
+
+    const notifyAddCart = () => {
+        toast.success('Your Product is added to Cart!', {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+        });
+    }
 
     const onChangePin = (e) => {
         setPin(e.target.value)
@@ -20,8 +34,26 @@ const hoodie = ({ buyNow, addToCart, product, varients }) => {
 
         if (pinJson.includes(pin)) {
             setServiceable(true)
+            toast.success('Yay! This pincode is Serviceable', {
+                position: "top-right",
+                autoClose: 1500,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
         } else {
             setServiceable(false)
+            toast.error('Sorry! we do not deliver to this pincode yet', {
+                position: "top-right",
+                autoClose: 1500,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
         }
     }
 
@@ -32,6 +64,7 @@ const hoodie = ({ buyNow, addToCart, product, varients }) => {
     }
 
     return <section className="text-gray-600 body-font overflow-hidden">
+        <ToastContainer />
         <div className="container px-5 py-16 mx-auto">
             <div className="lg:w-4/5 mx-auto flex flex-wrap">
                 <img alt="ecommerce" className="lg:w-1/2 w-full px-3 sm:px-12 md:w-2/3 mx-auto lg:h-auto lg:px-0 object-cover object-top rounded" src={product.img} />
@@ -63,13 +96,13 @@ const hoodie = ({ buyNow, addToCart, product, varients }) => {
                         <div className="flex items-center">
                             <span className="mr-3">Color</span>
                             {Object.keys(varients).map((varCol) => (
-                                <button onClick={(e) => {refreshVarient(e, varCol)}} key={varCol} className={`border-2 ml-1 rounded-full focus:outline-none ${varCol == "black" ? "bg-black" : "bg-" + varCol + "-600"} ${varCol==product.color ? "border-purple-600 w-7 h-7":"border-gray-300 w-6 h-6"}`}></button>
+                                <button onClick={(e) => { refreshVarient(e, varCol) }} key={varCol} className={`border-2 ml-1 rounded-full focus:outline-none ${varCol == "black" ? "bg-black" : "bg-" + varCol + "-600"} ${varCol == product.color ? "border-purple-600 w-7 h-7" : "border-gray-300 w-6 h-6"}`}></button>
                             ))}
                         </div>
                         <div className="flex ml-6 items-center">
                             <span className="mr-3">Size</span>
                             <div className="relative">
-                                <select onChange={(e) => {setSize(e.target.value)}} className="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-purple-200 focus:border-purple-500 text-base pl-3 pr-10">
+                                <select onChange={(e) => { setSize(e.target.value) }} className="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-purple-200 focus:border-purple-500 text-base pl-3 pr-10">
                                     {product.size.map((s) => (
                                         <option key={s} value={s}>{s}</option>
                                     ))}
@@ -84,7 +117,7 @@ const hoodie = ({ buyNow, addToCart, product, varients }) => {
                     </div>
                     <div className="flex">
                         <span className="title-font font-medium text-2xl text-gray-900">₹{product.price}</span>
-                        <button onClick={() => addToCart(product.slug, 1, product.price, product.title, size, product.color)} className="flex ml-auto text-white bg-purple-500 border-0 py-2 px-3 md:px-6 focus:outline-none hover:bg-purple-600 rounded">Add To Cart</button>
+                        <button onClick={() => { addToCart(product.slug, 1, product.price, product.title, size, product.color); notifyAddCart() }} className="flex ml-auto text-white bg-purple-500 border-0 py-2 px-3 md:px-6 focus:outline-none hover:bg-purple-600 rounded">Add To Cart</button>
                         <button onClick={() => buyNow(product.slug, 1, product.price, product.title, size, product.color)} className="flex ml-3 md:ml-5 text-white bg-purple-600 border-0 py-2 px-3 md:px-6 focus:outline-none hover:bg-purple-700 rounded">Buy Now</button>
                     </div>
                     <div className="checkPin flex space-x-2 mt-6 text-sm">

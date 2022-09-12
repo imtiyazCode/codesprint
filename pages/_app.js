@@ -2,7 +2,7 @@ import '../styles/globals.css'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { useState, useEffect } from 'react'
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router';
 
 function MyApp({ Component, pageProps }) {
 
@@ -54,7 +54,6 @@ function MyApp({ Component, pageProps }) {
     } else {
       newCart[itemCode] = { qty, price, name, size, variant }
     }
-
     setCart(newCart);
     saveCart(newCart);
   }
