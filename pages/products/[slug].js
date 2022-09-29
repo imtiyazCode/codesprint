@@ -4,10 +4,10 @@ import Product from '../../models/Product';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const hoodie = ({ buyNow, addToCart, product, varients }) => {
+const slug = ({ buyNow, addToCart, product, varients }) => {
 
-    const [color, setColor] = useState(product.color)
-    const [size, setSize] = useState(product.size[0])
+    const [color, setColor] = useState(product.color);
+    const [size, setSize] = useState(product.size[0]);
 
     const [pin, setPin] = useState()
     const [serviceable, setServiceable] = useState()
@@ -70,7 +70,7 @@ const hoodie = ({ buyNow, addToCart, product, varients }) => {
                 <img alt="ecommerce" className="lg:w-1/2 w-full px-3 sm:px-12 md:w-2/3 mx-auto lg:h-auto lg:px-0 object-cover object-top rounded" src={product.img} />
                 <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
                     <h2 className="text-sm title-font text-gray-500 tracking-widest">CODESPRINT</h2>
-                    <h1 className="text-gray-900 text-3xl title-font font-medium mb-1">{product.title} - ({product.color} / {size})</h1>
+                    <h1 className="text-gray-900 text-3xl title-font font-medium mb-1">{product.title} - ({product.category === "sticker" ? "": `${product.color} / `}{size})</h1>
                     <div className="flex mb-4">
                         <span className="flex items-center">
                             <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 text-purple-500" viewBox="0 0 24 24">
@@ -93,13 +93,14 @@ const hoodie = ({ buyNow, addToCart, product, varients }) => {
                     </div>
                     <p className="leading-relaxed">{product.desc}</p>
                     <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
-                        <div className="flex items-center">
+                        {!(product.category === "sticker") && <div className="flex items-center mr-6">
                             <span className="mr-3">Color</span>
                             {Object.keys(varients).map((varCol) => (
                                 <button onClick={(e) => { refreshVarient(e, varCol) }} key={varCol} className={`border-2 ml-1 rounded-full focus:outline-none ${varCol == "black" ? "bg-black" : "bg-" + varCol + "-600"} ${varCol == product.color ? "border-purple-600 w-7 h-7" : "border-gray-300 w-6 h-6"}`}></button>
                             ))}
                         </div>
-                        <div className="flex ml-6 items-center">
+                        }
+                        <div className="flex items-center">
                             <span className="mr-3">Size</span>
                             <div className="relative">
                                 <select onChange={(e) => { setSize(e.target.value) }} className="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-purple-200 focus:border-purple-500 text-base pl-3 pr-10">
@@ -155,4 +156,4 @@ export async function getServerSideProps(context) {
     }
 }
 
-export default hoodie
+export default slug
