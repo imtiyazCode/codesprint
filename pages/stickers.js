@@ -3,31 +3,37 @@ import Link from 'next/link';
 import Product from '../models/Product';
 import mongoose from 'mongoose';
 
-const Stickers = ({products}) => {
+const Stickers = ({ products }) => {
   return (
     <div>
       <section className="text-gray-600 body-font w-[90%] mx-auto">
         <div className="container px-5 py-12 mx-auto">
           <div className="flex flex-wrap justify-center -m-4">
-            {Object.keys(products).map((item) => (
-              <Link key={products[item].slug} href={`products/${products[item].slug}`}>
-                <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
-                  <a className="block relative rounded overflow-hidden">
-                    <img alt="ecommerce" className="h-[250px] block m-auto" src={products[item].img} />
-                  </a>
-                  <div className="mt-4 text-center md:text-left">
-                    <h3 className="text-purple-500 text-xs tracking-widest title-font mb-1">Sticker</h3>
-                    <h2 className="text-gray-900 title-font text-lg font-medium">{products[item].title}</h2>
-                    <div className="mt-1">
-                      {products[item].size.map((size) => (
-                        <span key={size} className='border border-gray-300 px-1 mx-1 text-sm rounded-sm' >{size.toUpperCase()}</span>
-                      ))}
+            {!(JSON.stringify(products) === '{}') ?
+              Object.keys(products).map((item) => (
+                <Link key={products[item].slug} href={`products/${products[item].slug}`}>
+                  <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
+                    <a className="block relative rounded overflow-hidden">
+                      <img alt="ecommerce" className="h-[250px] block m-auto" src={products[item].img} />
+                    </a>
+                    <div className="mt-4 text-center md:text-left">
+                      <h3 className="text-purple-500 text-xs tracking-widest title-font mb-1">Sticker</h3>
+                      <h2 className="text-gray-900 title-font text-lg font-medium">{products[item].title}</h2>
+                      <div className="mt-1">
+                        {products[item].size.map((size) => (
+                          <span key={size} className='border border-gray-300 px-1 mx-1 text-sm rounded-sm' >{size.toUpperCase()}</span>
+                        ))}
+                      </div>
+                      <p className="mt-1">₹ {products[item].price} </p>
                     </div>
-                    <p className="mt-1">₹ {products[item].price} </p>
                   </div>
-                </div>
-              </Link>
-            ))}
+                </Link>
+              )) :
+              <div className="outofstocks py-10">
+                <p>Sorry All the Stickers are currently out of stock. New stock comming soon. Stay tuned.</p>
+              </div>
+            }
+
           </div>
         </div>
       </section></div>

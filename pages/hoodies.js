@@ -9,7 +9,7 @@ const Hoodies = ({ products }) => {
       <section className="text-gray-600 body-font w-[90%] mx-auto">
         <div className="container px-5 py-12 mx-auto">
           <div className="flex flex-wrap justify-center -m-4">
-            {products && Object.keys(products).map((item) => (
+            {!(JSON.stringify(products) === '{}') ? Object.keys(products).map((item) => (
               <Link href={`products/${products[item].slug}`}>
                 <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
                   <a className="block relative rounded overflow-hidden">
@@ -32,7 +32,11 @@ const Hoodies = ({ products }) => {
                   </div>
                 </div>
               </Link>
-            ))}
+            )) :
+              <div className="outofstocks py-10">
+                <p>Sorry All the Hoodies are currently out of stock. New stock comming soon. Stay tuned.</p>
+              </div>
+            }
           </div>
         </div>
       </section>
