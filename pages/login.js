@@ -1,8 +1,46 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Link from 'next/link'
 import { AiFillLock } from 'react-icons/ai'
 
 const Login = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleChange = (e) => {
+    if(e.target.name == "email"){
+      setEmail(e.target.value)
+    }
+    else if(e.target.name == "password"){
+      setPassword(e.target.value)
+    }
+  }
+
+  const handleSubmit = async(e) => {
+    e.preventDefault();
+
+    const formData = {email, password}
+    
+    const res = await fetch("http://localhost:3000/api/login",{
+      method:"POST",
+      headers:{
+        'Content-Type': "application/json"
+      },
+      body: JSON.stringify(formData)
+    })
+
+    let response = await res.json()
+    if(response.flag){
+      console.log("You are logged in");
+      setEmail('')
+      setPassword('')
+    } else if (res.status == 400) {
+      console.log("Email or Password is Invalid");
+    } else {
+      console.log("Something went wrong");
+    }
+
+  }
+
   return (
     <div className="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 bg-gray-100">
       <div className="max-w-md w-full space-y-8 mb-8">
@@ -16,16 +54,16 @@ const Login = () => {
             </Link>
           </p>
         </div>
-        <form className="mt-8 space-y-6 bg-white p-10 rounded-lg shadow" action="#" method="POST">
+        <form className="mt-8 space-y-6 bg-white p-10 rounded-lg shadow" onSubmit={handleSubmit} method="POST">
           <div className="rounded-md shadow-sm space-y-5">
             <div>
-              <label htmlFor="email-address" className="">Email address</label>
-              <input id="email-address" name="email" type="email" autoComplete="email" required
+              <label htmlFor="email-address" className="lable">Email address</label>
+              <input id="email-address" name="email" value={email} type="email" onChange={handleChange} autoComplete="email" required
                 className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 text-gray-900 rounded-t-md focus:outline-none focus:ring-purple-500 focus:border-purple-500 focus:z-10 sm:text-sm my-1" />
             </div>
             <div>
-              <label htmlFor="password" className="">Password</label>
-              <input id="password" name="password" type="password" autoComplete="current-password" required
+              <label htmlFor="password" className="lable">Password</label>
+              <input id="password" name="password" value={password} type="password" onChange={handleChange} autoComplete="current-password" required
                 className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 text-gray-900 rounded-t-md focus:outline-none focus:ring-purple-500 focus:border-purple-500 focus:z-10 sm:text-sm my-1" />
             </div>
           </div>
