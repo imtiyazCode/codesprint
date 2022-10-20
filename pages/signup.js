@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { AiFillLock } from 'react-icons/ai'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Signup = () => {
   const [name, setName] = useState('')
@@ -20,6 +22,29 @@ const Signup = () => {
     }
   }
 
+  const notifySignup = () => {
+    toast.success('You are successfully Signup!', {
+      position: "top-right",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  }
+  const notifySignupFail= () => {
+    toast.error('Something went wrong!', {
+      position: "top-right",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  }
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -32,6 +57,11 @@ const Signup = () => {
       body: JSON.stringify(formData),
     })
     let data = await res.json()
+    if(data.flag){
+      notifySignup();
+    } else {
+      notifySignupFail()
+    }
 
     setName('')
     setEmail('')
@@ -41,6 +71,7 @@ const Signup = () => {
 
   return (
     <div className="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 bg-gray-100">
+      <ToastContainer />
       <div className="max-w-md w-full space-y-8 mb-8">
         <div>
           <img className="mx-auto h-12 w-auto" src="/logo.png" alt="logo" />

@@ -1,48 +1,86 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
 import { AiFillLock } from 'react-icons/ai'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const handleChange = (e) => {
-    if(e.target.name == "email"){
+    if (e.target.name == "email") {
       setEmail(e.target.value)
     }
-    else if(e.target.name == "password"){
+    else if (e.target.name == "password") {
       setPassword(e.target.value)
     }
   }
 
-  const handleSubmit = async(e) => {
+  const notifyLogin = () => {
+    toast.success('You are successfully logged in!', {
+      position: "top-right",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  }
+  const notifyLoginIncorrect= () => {
+    toast.error('Email or Password is Invalid', {
+      position: "top-right",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  }
+  const notifyLoginFail= () => {
+    toast.error('Something went wrong!', {
+      position: "top-right",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  }
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const formData = {email, password}
-    
-    const res = await fetch("http://localhost:3000/api/login",{
-      method:"POST",
-      headers:{
+    const formData = { email, password }
+
+    const res = await fetch("http://localhost:3000/api/login", {
+      method: 'POST',
+      headers: {
         'Content-Type': "application/json"
       },
       body: JSON.stringify(formData)
     })
 
     let response = await res.json()
-    if(response.flag){
-      console.log("You are logged in");
+
+    if (response.flag) {
       setEmail('')
       setPassword('')
+      notifyLogin()
     } else if (res.status == 400) {
-      console.log("Email or Password is Invalid");
+      notifyLoginIncorrect();
     } else {
-      console.log("Something went wrong");
+      notifyLoginFail()
     }
 
   }
 
   return (
     <div className="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 bg-gray-100">
+      <ToastContainer />
       <div className="max-w-md w-full space-y-8 mb-8">
         <div>
           <img className="mx-auto h-12 w-auto" src="/logo.png" alt="logo" />
