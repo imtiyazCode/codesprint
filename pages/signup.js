@@ -33,7 +33,7 @@ const Signup = () => {
       progress: undefined,
     });
   }
-  const notifySignupFail= () => {
+  const notifySignupFail = () => {
     toast.error('Something went wrong!', {
       position: "top-right",
       autoClose: 2000,
@@ -49,15 +49,15 @@ const Signup = () => {
     e.preventDefault();
 
     const formData = { name, email, number, password };
-    let res = await fetch("http://localhost:3000/api/signup", {
+    let data = await fetch("http://localhost:3000/api/signup", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(formData),
     })
-    let data = await res.json()
-    if(data.flag){
+    let res = await data.json()
+    if (res.success) {
       notifySignup();
     } else {
       notifySignupFail()

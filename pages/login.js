@@ -1,12 +1,15 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/router';
 import { AiFillLock } from 'react-icons/ai'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Router from 'next/router';
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const router = useRouter()
 
   const handleChange = (e) => {
     if (e.target.name == "email") {
@@ -20,7 +23,7 @@ const Login = () => {
   const notifyLogin = () => {
     toast.success('You are successfully logged in!', {
       position: "top-right",
-      autoClose: 2000,
+      autoClose: 1500,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
@@ -28,7 +31,7 @@ const Login = () => {
       progress: undefined,
     });
   }
-  const notifyLoginIncorrect= () => {
+  const notifyLoginIncorrect = () => {
     toast.error('Email or Password is Invalid', {
       position: "top-right",
       autoClose: 2000,
@@ -39,7 +42,7 @@ const Login = () => {
       progress: undefined,
     });
   }
-  const notifyLoginFail= () => {
+  const notifyLoginFail = () => {
     toast.error('Something went wrong!', {
       position: "top-right",
       autoClose: 2000,
@@ -66,10 +69,11 @@ const Login = () => {
 
     let response = await res.json()
 
-    if (response.flag) {
-      setEmail('')
-      setPassword('')
+    if (response.success) {
       notifyLogin()
+      setTimeout(() => {
+        router.push('http://localhost:3000/')
+      }, 1500);
     } else if (res.status == 400) {
       notifyLoginIncorrect();
     } else {

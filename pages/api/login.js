@@ -4,12 +4,12 @@ import connectDB from "../../middleware/mongoose";
 const handler = async (req, res) => {
     if (req.method === 'POST') {
         let user = await User.findOne({ email: req.body.email })
-        if( req.body.password == user.password){
-            res.status(200).json({ flag: true })
+        if (user && req.body.password == user.password) {
+            res.status(200).json({ success: true })
         }
-        res.status(400).json({ error: "Email Or Password is invalid"})
+        res.status(400).json({ success: false, error: "Email Or Password is invalid" })
     } else {
-        res.status(400).json({ error: "This method is not allowed" })
+        res.status(400).json({ success: false, error: "This method is not allowed" })
     }
 }
 
