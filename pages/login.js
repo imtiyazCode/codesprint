@@ -100,7 +100,7 @@ const Login = () => {
           <div className="rounded-md shadow-sm space-y-5">
             <div>
               <label htmlFor="email-address" className="lable">Email address</label>
-              <input id="email-address" name="email" value={email} type="email" onChange={handleChange} autoComplete="email" required
+              <input id="email-address" name="email" value={email} type="email" onChange={handleChange} required
                 className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 text-gray-900 rounded-t-md focus:outline-none focus:ring-purple-500 focus:border-purple-500 focus:z-10 sm:text-sm my-1" />
             </div>
             <div>

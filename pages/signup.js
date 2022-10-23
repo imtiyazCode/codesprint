@@ -92,7 +92,7 @@ const Signup = () => {
             </div>
             <div>
               <label htmlFor="email-address" className="">Email address</label>
-              <input onChange={handleChange} id="email-address" name="email" type="email" value={email} autoComplete="email" required
+              <input onChange={handleChange} id="email-address" name="email" type="email" value={email} required
                 className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 text-gray-900 rounded-t-md focus:outline-none focus:ring-purple-500 focus:border-purple-500 focus:z-10 sm:text-sm my-1" />
             </div>
             <div>
