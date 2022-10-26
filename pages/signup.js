@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { AiFillLock } from 'react-icons/ai'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -9,6 +10,8 @@ const Signup = () => {
   const [email, setEmail] = useState('')
   const [number, setNumber] = useState('')
   const [password, setPassword] = useState('')
+
+  const router = useRouter();
 
   const handleChange = (e) => {
     if (e.target.name == 'name') {
@@ -59,6 +62,10 @@ const Signup = () => {
     let res = await data.json()
     if (res.success) {
       notifySignup();
+      localStorage.setItem('user', res.token);
+      setTimeout(() => {
+        router.push('http://localhost:3000/');
+      }, 1500);
     } else {
       notifySignupFail()
     }

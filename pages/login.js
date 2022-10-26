@@ -4,7 +4,6 @@ import { useRouter } from 'next/router';
 import { AiFillLock } from 'react-icons/ai'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Router from 'next/router';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -59,7 +58,7 @@ const Login = () => {
 
     const formData = { email, password }
 
-    const res = await fetch("http://localhost:3000/api/login", {
+    const data = await fetch("http://localhost:3000/api/login", {
       method: 'POST',
       headers: {
         'Content-Type': "application/json"
@@ -67,14 +66,15 @@ const Login = () => {
       body: JSON.stringify(formData)
     })
 
-    let response = await res.json()
+    let res = await data.json()
 
-    if (response.success) {
+    if (res.success) {
       notifyLogin()
+      localStorage.setItem('user', res.token);
       setTimeout(() => {
-        router.push('http://localhost:3000/')
+        router.push('http://localhost:3000/');
       }, 1500);
-    } else if (res.status == 400) {
+    } else if (data.status == 400) {
       notifyLoginIncorrect();
     } else {
       notifyLoginFail()

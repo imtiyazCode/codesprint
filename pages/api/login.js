@@ -1,6 +1,7 @@
 import User from "../../models/User";
 import connectDB from "../../middleware/mongoose";
 import CryptoJS from 'crypto-js';
+import jwt from 'jsonwebtoken';
 
 const handler = async (req, res) => {
     if (req.method === 'POST') {
@@ -9,9 +10,12 @@ const handler = async (req, res) => {
         const sec_pass = bytes.toString(CryptoJS.enc.Utf8);
 
         if (user && req.body.password == sec_pass) {
-            res.status(200).json({ success: true })
+            const token = jwt.sign({ name: user.name, email: user.email }, process.env.JWT_SECRET, { expiresIn: '30d' })
+            res.status(200).json({ success: true, token: token })
         }
-        res.status(400).json({ success: false, error: "Email Or Password is invalid" })
+        else {
+            res.status(400).json({ success: false, error: "Email Or Password is invalid" })
+        }
     } else {
         res.status(400).json({ success: false, error: "This method is not allowed" })
     }
