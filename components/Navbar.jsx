@@ -7,7 +7,7 @@ import { RiAccountCircleFill } from 'react-icons/ri';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const Navbar = ({ cart, addToCart, removeFromToCart, clearCart, subTotal }) => {
+const Navbar = ({ cart, user, addToCart, removeFromToCart, clearCart, subTotal, logout }) => {
 
     const ref = useRef()
 
@@ -50,11 +50,26 @@ const Navbar = ({ cart, addToCart, removeFromToCart, clearCart, subTotal }) => {
                 </ul>
             </nav>
             <div className="cta align-middle text-[#33384d] font-bold">
-                <Link href={"/login"}><button className="px-2 py-3 text-2xl" ><RiAccountCircleFill /></button></Link>
+                {
+                    user.value == null ? (
+                        <Link href={"/login"}><button className="px-2 py-3 text-2xl" ><RiAccountCircleFill /></button></Link>
+                    ) : (
+                        <span className="dropdown">
+                            <button className="px-2 py-3 text-2xl" ><RiAccountCircleFill /></button>
+                            <div className="dropdown-menu absolute hidden bg-white right-12 rounded-md top-14">
+                                <ul className="menu">
+                                    <Link href={"/account"}><a><li className="account py-2 px-5 hover:bg-purple-600 hover:text-white rounded-t-md">Account</li></a></Link>
+                                    <Link href={"/order"}><a><li className="py-2 px-5 hover:bg-purple-600 hover:text-white">Order</li></a></Link>
+                                    <li className="logout py-2 px-5 hover:bg-purple-600 hover:text-white rounded-b-md cursor-pointer" onClick={logout}> Logout</li>
+                                </ul>
+                            </div>
+                        </span>
+                    )
+                }
                 <button className="px-2 py-3 text-2xl" onClick={handleSideToggle} ><BiCartAlt /></button>
             </div>
             <div ref={ref} className="cartBar absolute top-0 right-0 h-full transform transition-transform translate-x-full z-20 ">
-            <ToastContainer />
+                <ToastContainer />
                 <Cart cart={cart} addToCart={addToCart} clearCart={() => { clearCart(); notifyClrCart() }} removeFromToCart={removeFromToCart} subTotal={subTotal} handleSideToggle={handleSideToggle} />
             </div>
         </div>

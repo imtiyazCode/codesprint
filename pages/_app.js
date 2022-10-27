@@ -9,6 +9,8 @@ function MyApp({ Component, pageProps }) {
   const [cart, setCart] = useState({});
   const [subTotal, setSubTotal] = useState(0);
   const router = useRouter();
+  const [user, setUser] = useState({ value: null });
+  const [key, setKey] = useState(1)
 
   useEffect(() => {
 
@@ -19,12 +21,16 @@ function MyApp({ Component, pageProps }) {
         let subt = countSubTotal(JSON.parse(localStorage.getItem("cart")))
         setSubTotal(subt)
       }
+
+      if (localStorage.getItem('token')) {
+        setUser({ value: localStorage.getItem('token') })
+      }
     } catch (error) {
       console.error(error);
       localStorage.clear()
     }
 
-  }, [])
+  }, [router.query])
 
 
   const saveCart = (myCart) => {
@@ -79,6 +85,13 @@ function MyApp({ Component, pageProps }) {
     saveCart(newCart);
   }
 
+  const logout = () => {
+    localStorage.removeItem('token')
+    setUser({value:null})
+    setKey(Math.floor(Math.random() * 100))
+    router.push('/')
+  }
+
   const clearCart = () => {
     setCart({});
     saveCart({});
@@ -86,7 +99,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <div className='relative'>
-      <Navbar cart={cart} addToCart={addToCart} clearCart={clearCart} removeFromToCart={removeFromToCart} subTotal={subTotal} />
+      <Navbar key={key} cart={cart} user={user} addToCart={addToCart} clearCart={clearCart} removeFromToCart={removeFromToCart} subTotal={subTotal} logout={logout} />
       <Component buyNow={buyNow} cart={cart} addToCart={addToCart} clearCart={clearCart} removeFromToCart={removeFromToCart} subTotal={subTotal} {...pageProps} />
       <Footer />
     </div>

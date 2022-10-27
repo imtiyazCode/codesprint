@@ -70,7 +70,7 @@ const Login = () => {
 
     if (res.success) {
       notifyLogin()
-      localStorage.setItem('user', res.token);
+      localStorage.setItem('token', res.token);
       setTimeout(() => {
         router.push('http://localhost:3000/');
       }, 1500);
@@ -100,7 +100,7 @@ const Login = () => {
           <div className="rounded-md shadow-sm space-y-5">
             <div>
               <label htmlFor="email-address" className="lable">Email address</label>
-              <input id="email-address" name="email" value={email} type="email" onChange={handleChange} required
+              <input id="email-address" name="email" value={email} type="email" onChange={handleChange} required autoComplete='username'
                 className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 text-gray-900 rounded-t-md focus:outline-none focus:ring-purple-500 focus:border-purple-500 focus:z-10 sm:text-sm my-1" />
             </div>
             <div>

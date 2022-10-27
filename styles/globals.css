@@ -20,6 +20,9 @@ body {
   color: rgb(94, 0, 177);
   background-color: rgba(183, 101, 255, 0.516);
 }
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
 
 /* @media (prefers-color-scheme: dark) {
   html {

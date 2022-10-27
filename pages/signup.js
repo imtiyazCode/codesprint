@@ -62,7 +62,7 @@ const Signup = () => {
     let res = await data.json()
     if (res.success) {
       notifySignup();
-      localStorage.setItem('user', res.token);
+      localStorage.setItem('token', res.token);
       setTimeout(() => {
         router.push('http://localhost:3000/');
       }, 1500);

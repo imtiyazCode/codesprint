@@ -5,14 +5,14 @@ import Services from '../components/Services';
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>Codesprint</title>
         <meta name="description" content="Codesprint - Print And Wear the code" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className='font-poppins'>
-        <div className="banner bg-purple-500 w-full h-fit py-7 md:py-0 md:h-[500px] flex items-center justify-center relative">
+        <div className="banner bg-purple-500 w-full h-fit py-7 md:py-0 md:h-[500px] flex items-center justify-center">
           <div className="innerBanner bg-purple-700 w-[90%] m-auto h-fit py-8 md:py-0 sm:h-[80%] md:h-[65%] lg:h-[75%] rounded-[10px] md:pl-[70px] md:flex md:justify-between">
             <div className="headerText flex items-center justify-center md:items-start flex-col md:space-y-6">
               <h1 className='text-[55px] sm:text-[75px] md:text-[70px] lg:text-[9vw] xl:text-[117px] font-extrabold text-white leading-[129px]' >
@@ -30,9 +30,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-
         <Services />
       </main>
-    </div>
+    </>
   )
 }
