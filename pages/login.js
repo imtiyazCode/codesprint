@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import Link from 'next/link'
+import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/router';
+import Link from 'next/link'
 import { AiFillLock } from 'react-icons/ai'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -18,6 +18,13 @@ const Login = () => {
       setPassword(e.target.value)
     }
   }
+
+  useEffect(() => {
+    if(localStorage.getItem('token')){
+      router.push('/')
+    }
+  }, [])
+  
 
   const notifyLogin = () => {
     toast.success('You are successfully logged in!', {

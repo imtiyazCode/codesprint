@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useEffect } from 'react'
+import { useRouter } from 'next/router';
 import Link from "next/link";
 import { AiFillLock } from 'react-icons/ai'
 
 const forgotPassword = () => {
+
+    const router = useRouter()
+
+    useEffect(() => {
+        if(localStorage.getItem('token')){
+          router.push('/')
+        }
+      }, [])
+
     return (
         <div className="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 bg-gray-100">
             <div className="max-w-md w-full space-y-8 mb-8">
@@ -29,7 +39,7 @@ const forgotPassword = () => {
                             <span className="absolute left-0 inset-y-0 flex items-center pl-3">
                                 <AiFillLock className="h-5 w-5 text-purple-500 group-hover:text-purple-400" />
                             </span>
-                            Continue 
+                            Continue
                         </button>
                     </div>
                 </form>
