@@ -6,6 +6,7 @@ import { useRef } from "react"
 import { RiAccountCircleFill } from 'react-icons/ri';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ReactTooltip from "react-tooltip";
 
 const Navbar = ({ cart, user, addToCart, removeFromToCart, clearCart, subTotal, logout }) => {
 
@@ -52,10 +53,19 @@ const Navbar = ({ cart, user, addToCart, removeFromToCart, clearCart, subTotal, 
             <div className="cta align-middle text-[#33384d] font-bold">
                 {
                     user.value == null ? (
-                        <Link href={"/login"}><button className="px-2 py-3 text-2xl" ><RiAccountCircleFill /></button></Link>
+                        <a
+                            data-for="main"
+                            data-tip="Click for Login"
+                            data-iscapture="true"
+                        >
+
+                            <Link href={"/login"}><button className="px-2 py-3 text-2xl" ><RiAccountCircleFill /></button></Link>
+                        </a>
                     ) : (
                         <span className="dropdown">
+
                             <button className="px-2 py-3 text-2xl" ><RiAccountCircleFill /></button>
+
                             <div className="dropdown-menu absolute hidden bg-white right-12 rounded-md top-14">
                                 <ul className="menu">
                                     <Link href={"/account"}><a><li className="account py-2 px-5 hover:bg-purple-600 hover:text-white rounded-t-md">Account</li></a></Link>
@@ -67,6 +77,13 @@ const Navbar = ({ cart, user, addToCart, removeFromToCart, clearCart, subTotal, 
                     )
                 }
                 <button className="px-2 py-3 text-2xl" onClick={handleSideToggle} ><BiCartAlt /></button>
+                <ReactTooltip
+                    id="main"
+                    place={"top"}
+                    type={"dark"}
+                    effect={"float"}
+                    multiline={false}
+                />
             </div>
             <div ref={ref} className="cartBar absolute top-0 right-0 h-full transform transition-transform translate-x-full z-20 ">
                 <ToastContainer />
