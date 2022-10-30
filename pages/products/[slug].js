@@ -3,8 +3,11 @@ import mongoose from 'mongoose';
 import Product from '../../models/Product';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useRouter } from 'next/router';
 
 const slug = ({ buyNow, addToCart, product, varients }) => {
+
+    const router = useRouter();
 
     const [color, setColor] = useState(product.color);
     const [size, setSize] = useState(product.size[0]);
@@ -29,7 +32,7 @@ const slug = ({ buyNow, addToCart, product, varients }) => {
     }
 
     const checkServiseablity = async () => {
-        let pins = await fetch("http://localhost:3000/api/pincode");
+        let pins = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/pincode`);
         let pinJson = await pins.json()
 
         if (pinJson.includes(pin)) {
@@ -58,9 +61,9 @@ const slug = ({ buyNow, addToCart, product, varients }) => {
     }
 
     const refreshVarient = (e, varCol) => {
-        let url = `http://localhost:3000/products/${varients[varCol].slug}`
+        let url = `${process.env.NEXT_PUBLIC_HOST}/products/${varients[varCol].slug}`
         setColor(varCol);
-        window.location = url;
+        router.push(url)
     }
 
     return <section className="text-gray-600 body-font overflow-hidden">

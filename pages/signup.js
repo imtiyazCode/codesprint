@@ -58,7 +58,7 @@ const Signup = () => {
     e.preventDefault();
 
     const formData = { name, email, number, password };
-    let data = await fetch("http://localhost:3000/api/signup", {
+    let data = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/signup`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -70,7 +70,7 @@ const Signup = () => {
       notifySignup();
       localStorage.setItem('token', res.token);
       setTimeout(() => {
-        router.push('http://localhost:3000/');
+        router.push(`${process.env.NEXT_PUBLIC_HOST}/`);
       }, 1500);
     } else {
       notifySignupFail()

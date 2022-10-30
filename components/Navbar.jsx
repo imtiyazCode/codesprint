@@ -68,8 +68,8 @@ const Navbar = ({ cart, user, addToCart, removeFromToCart, clearCart, subTotal, 
 
                             <div className="dropdown-menu absolute hidden bg-white right-12 rounded-md top-14">
                                 <ul className="menu">
-                                    <Link href={"/account"}><a><li className="account py-2 px-5 hover:bg-purple-600 hover:text-white rounded-t-md">Account</li></a></Link>
-                                    <Link href={"/order"}><a><li className="py-2 px-5 hover:bg-purple-600 hover:text-white">Order</li></a></Link>
+                                    <Link href={"/myAccount"}><a><li className="account py-2 px-5 hover:bg-purple-600 hover:text-white rounded-t-md">Account</li></a></Link>
+                                    <Link href={"/orders"}><a><li className="py-2 px-5 hover:bg-purple-600 hover:text-white">Order</li></a></Link>
                                     <li className="logout py-2 px-5 hover:bg-purple-600 hover:text-white rounded-b-md cursor-pointer" onClick={logout}> Logout</li>
                                 </ul>
                             </div>

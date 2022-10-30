@@ -65,7 +65,7 @@ const Login = () => {
 
     const formData = { email, password }
 
-    const data = await fetch("http://localhost:3000/api/login", {
+    const data = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/login`, {
       method: 'POST',
       headers: {
         'Content-Type': "application/json"
@@ -79,7 +79,7 @@ const Login = () => {
       notifyLogin()
       localStorage.setItem('token', res.token);
       setTimeout(() => {
-        router.push('http://localhost:3000/');
+        router.push(`${process.env.NEXT_PUBLIC_HOST}/`);
       }, 1500);
     } else if (data.status == 400) {
       notifyLoginIncorrect();
