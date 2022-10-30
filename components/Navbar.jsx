@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from 'react';
 import Image from "next/image"
 import Link from "next/link"
 import { BiCartAlt } from 'react-icons/bi'
@@ -9,6 +10,12 @@ import 'react-toastify/dist/ReactToastify.css';
 import ReactTooltip from "react-tooltip";
 
 const Navbar = ({ cart, user, addToCart, removeFromToCart, clearCart, subTotal, logout }) => {
+
+    const [isMounted, setIsMounted] = useState(false); // Need this for the react-tooltip
+
+    useEffect(() => {
+        setIsMounted(true);
+    }, []);
 
     const ref = useRef()
 
@@ -77,13 +84,13 @@ const Navbar = ({ cart, user, addToCart, removeFromToCart, clearCart, subTotal, 
                     )
                 }
                 <button className="px-2 py-3 text-2xl" onClick={handleSideToggle} ><BiCartAlt /></button>
-                <ReactTooltip
+                {isMounted && <ReactTooltip
                     id="main"
                     place={"top"}
                     type={"dark"}
                     effect={"float"}
                     multiline={false}
-                />
+                />}
             </div>
             <div ref={ref} className="cartBar absolute top-0 right-0 h-full transform transition-transform translate-x-full z-20 ">
                 <ToastContainer />

@@ -10,7 +10,7 @@ const Hoodies = ({ products }) => {
         <div className="container px-5 py-12 mx-auto">
           <div className="flex flex-wrap justify-center -m-4">
             {!(JSON.stringify(products) === '{}') ? Object.keys(products).map((item) => (
-              <Link href={`products/${products[item].slug}`}>
+              <Link key={products[item].slug} href={`products/${products[item].slug}`}>
                 <div className="lg:w-[calc(25%-16px)] md:w-[calc(50%-16px)] p-4 w-full mx-2 my-3 rounded-lg shadow-lg cursor-pointer">
                   <a className="block relative rounded overflow-hidden">
                     <img alt="ecommerce" className="h-[250px] block m-auto" src={products[item].img} />
